@@ -1,0 +1,765 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="x17_files/filelist.xml">
+<link rel=Edit-Time-Data href="x17_files/editdata.mso">
+<link rel=OLE-Object-Data href="x17_files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>ANALIZA OBIECTUAL&#258; A CÂMPURILOR VECTORIALE</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Dany</o:Author>
+  <o:LastAuthor>Dany</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>1</o:TotalTime>
+  <o:Created>2008-07-20T14:57:00Z</o:Created>
+  <o:LastSaved>2008-07-20T14:57:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1038</o:Words>
+  <o:Characters>5918</o:Characters>
+  <o:Lines>49</o:Lines>
+  <o:Paragraphs>13</o:Paragraphs>
+  <o:CharactersWithSpaces>6943</o:CharactersWithSpaces>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:21.75pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	text-align:justify;
+	text-indent:21.75pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:Arial;
+	mso-font-kerning:16.0pt;}
+h2
+	{mso-style-next:"Body Text";
+	margin-top:8.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-align:justify;
+	text-indent:21.25pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-font-kerning:14.0pt;
+	mso-ansi-language:RO;
+	mso-bidi-font-weight:normal;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{mso-style-noshow:yes;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:21.25pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:RO;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{mso-style-noshow:yes;
+	mso-style-next:"Body Text";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	text-align:center;
+	text-indent:21.25pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:RO;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+span.MsoFootnoteReference
+	{mso-style-noshow:yes;
+	mso-style-parent:"";
+	font-family:"Times New Roman";
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	vertical-align:super;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-align:justify;
+	text-indent:21.75pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.Comentariu, li.Comentariu, div.Comentariu
+	{mso-style-name:Comentariu;
+	margin-top:0in;
+	margin-right:14.2pt;
+	margin-bottom:0in;
+	margin-left:14.2pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:28.35pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:black;
+	mso-ansi-language:RO;}
+p.MTDisplayEquation, li.MTDisplayEquation, div.MTDisplayEquation
+	{mso-style-name:MTDisplayEquation;
+	mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:21.25pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 227.0pt right 454.0pt;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+ /* Page Definitions */
+ @page
+	{mso-footnote-separator:url("x17_files/header.htm") fs;
+	mso-footnote-continuation-separator:url("x17_files/header.htm") fcs;
+	mso-endnote-separator:url("x17_files/header.htm") es;
+	mso-endnote-continuation-separator:url("x17_files/header.htm") ecs;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:645161215;
+	mso-list-type:simple;
+	mso-list-template-ids:201916431;}
+@list l0:level1
+	{mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35887416-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+<hr >
+<div align="center">
+          <table width="80%">
+          <tbody>
+                  <tr>
+                    <td>
+                        <a href="http://filosofia.obiectuala.ro"><img border="0" src="../../img/fo3.jpg" height="110" width="890" alt="filozofia obiectuala" ></a>
+                    </td>
+                  </tr>
+           </tbody>
+       </table>
+       </div>
+       <hr >
+<div class=Section1>
+
+<h1><a name="_Toc194477614">Anexa X.17 – ANALIZA OBIECTUAL&#258; A CÂMPURILOR
+VECTORIALE</a></h1>
+
+<p class=MsoNormal align=center style='text-align:center;text-indent:0in'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal style='text-indent:21.3pt'>A&#351;a cum am v&#259;zut în
+cap. 4, un <i style='mso-bidi-font-style:normal'>vector</i> este o reprezentare
+literal&#259; sau grafic&#259; a unui <i style='mso-bidi-font-style:normal'>proces
+elementar specific</i> (PES), care înseamn&#259; o varia&#355;ie
+elementar&#259; a unui singur atribut, distribuit&#259; pe o varia&#355;ie
+elementar&#259; a unui atribut suport, adic&#259; un element de
+distribu&#355;ie derivat&#259; a unei distribu&#355;ii primare. Varia&#355;ia
+are loc între dou&#259; st&#259;ri de tip S<sub>0</sub> (dou&#259; elemente de
+distribu&#355;ie primar&#259;)<a style='mso-footnote-id:ftn1' href="#_ftn1"
+name="_ftnref1" title=""><span class=MsoFootnoteReference><span
+style='mso-special-character:footnote'><![if !supportFootnotes]><span
+class=MsoFootnoteReference><span style='font-size:12.0pt;mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA'>[1]</span></span><![endif]></span></span></a>, <i
+style='mso-bidi-font-style:normal'>starea ini&#355;ial&#259;</i> &#351;i <i
+style='mso-bidi-font-style:normal'>starea final&#259;</i>, st&#259;ri ce constituie
+frontierele <u>asimptotice</u> ale obiectului vector, în acela&#351;i timp ele
+fiind &#351;i referin&#355;e interne ale acestuia.</p>
+
+<p class=MsoNormal style='text-indent:21.3pt'>Densitatea &#351;i direc&#355;ia
+elementului de distribu&#355;ie derivat&#259;, invariante în intervalul suport
+elementar, sunt st&#259;ri S<sub>x</sub> (unde <i style='mso-bidi-font-style:
+normal'>x</i> este ordinul distribu&#355;iei derivate) ale PES. A&#351;a cum am
+v&#259;zut în cap. 3, un obiect este caracterizat de un set format din
+&#351;ase propriet&#259;&#355;i fundamentale ce formeaz&#259; <i
+style='mso-bidi-font-style:normal'>modelul general</i> de obiect:</p>
+
+<p class=MsoNormal style='text-indent:42.55pt;tab-stops:63.8pt'>P1<span
+style='mso-tab-count:1'>   </span>Setul propriet&#259;&#355;ilor distribuite;</p>
+
+<p class=MsoNormal style='text-indent:42.55pt;tab-stops:63.8pt'>P2<span
+style='mso-tab-count:1'>   </span>Tipul atributului suport;</p>
+
+<p class=MsoNormal style='text-indent:42.55pt;tab-stops:63.8pt'>P3<span
+style='mso-tab-count:1'>   </span>Tipul de distribu&#355;ie;</p>
+
+<p class=MsoNormal style='text-indent:42.55pt;tab-stops:63.8pt'>P4<span
+style='mso-tab-count:1'>   </span>M&#259;rimea domeniului suport;</p>
+
+<p class=MsoNormal style='text-indent:42.55pt;tab-stops:63.8pt'>P5<span
+style='mso-tab-count:1'>   </span>Sistemul de referin&#355;&#259; intern;</p>
+
+<p class=MsoNormal style='text-indent:42.55pt;tab-stops:63.8pt'>P6<span
+style='mso-tab-count:1'>   </span>Existen&#355;a simultan&#259; a tuturor
+acestor propriet&#259;&#355;i, la acela&#351;i moment de timp <i
+style='mso-bidi-font-style:normal'>t</i>.</p>
+
+<p class=MsoNormal style='text-indent:21.3pt'>În cazul vectorilor, ace&#351;tia
+fiind PES, setul propriet&#259;&#355;ilor distribuite cuprinde doar o
+singur&#259; proprietate (atributul variabil). Tipul atributului suport, în
+majoritatea cazurilor este atributul temporal, dar poate fi &#351;i de alt tip,
+cum ar fi cel spa&#355;ial (în cazul gradientului de exemplu), frecven&#355;ial
+(în cazul proceselor fonetice sau muzicale de exemplu) etc. În cazul
+vectorilor, tipul de distribu&#355;ie este mereu aceea&#351;i, <i
+style='mso-bidi-font-style:normal'>distribu&#355;ia liniar&#259;</i>.
+M&#259;rimea domeniului suport este &#351;i ea mereu aceea&#351;i, domeniul pe
+care se men&#355;ine liniaritatea distribu&#355;iei. Sistemul de
+referin&#355;&#259; (SR) intern este format din cele dou&#259; st&#259;ri S<sub>x</sub>
+de care vorbeam mai sus, ce constituie reperele între care are loc PES
+(frontierele asimptotice ale domeniului intern), iar aceste st&#259;ri sunt
+definite fa&#355;&#259; de un sistem de referin&#355;&#259; extern (sistemul de
+referin&#355;&#259; fa&#355;&#259; de care este evaluat&#259; referin&#355;a
+intern&#259; a distribu&#355;iei primare).</p>
+
+<p class=MsoNormal style='text-indent:21.3pt'>Pentru cazul concret al
+vectorilor vitez&#259;, setul propriet&#259;&#355;ilor fundamentale este:</p>
+
+<p class=MsoNormal style='text-indent:42.55pt;tab-stops:63.8pt'>P1<span
+style='mso-tab-count:1'>   </span>Varia&#355;ia pozi&#355;iei spa&#355;iale;</p>
+
+<p class=MsoNormal style='text-indent:42.55pt;tab-stops:63.8pt'>P2<span
+style='mso-tab-count:1'>   </span>Atributul temporal;</p>
+
+<p class=MsoNormal style='text-indent:42.55pt;tab-stops:63.8pt'>P3<span
+style='mso-tab-count:1'>   </span>Distribu&#355;ie liniar&#259;;</p>
+
+<p class=MsoNormal style='text-indent:42.55pt;tab-stops:63.8pt'>P4<span
+style='mso-tab-count:1'>   </span>Intervalul <span style='position:relative;
+top:3.0pt;mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1027" type="#_x0000_t75" style='width:15pt;
+ height:14.25pt' o:ole="">
+ <v:imagedata src="x17_files/image001.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=20 height=19
+src="x17_files/image002.gif" v:shapes="_x0000_i1027"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1027"
+  DrawAspect="Content" ObjectID="_1278082536">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>pe care densitatea
+(viteza) se men&#355;ine uniform&#259;;</p>
+
+<p class=MsoNormal style='text-indent:42.55pt;tab-stops:63.8pt'>P5<span
+style='mso-tab-count:1'>   </span>Starea (pozi&#355;ia) ini&#355;ial&#259; sau
+starea final&#259; între care are loc varia&#355;ia de pozi&#355;ie;</p>
+
+<p class=MsoNormal style='text-indent:42.55pt;tab-stops:63.8pt'>P6<span
+style='mso-tab-count:1'>   </span>Momentul <i style='mso-bidi-font-style:normal'>t<sub>f</sub></i>
+al st&#259;rii finale, referin&#355;a intern&#259; dreapta a intervalului
+temporal <span style='position:relative;top:3.0pt;mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1028" type="#_x0000_t75" style='width:15pt;height:14.25pt' o:ole="">
+ <v:imagedata src="x17_files/image001.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=20 height=19
+src="x17_files/image002.gif" v:shapes="_x0000_i1028"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1028"
+  DrawAspect="Content" ObjectID="_1278082537">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>ce constituie suportul
+PES (pentru PES abstracte, se poate utiliza &#351;i referin&#355;a intern&#259;
+stânga <i style='mso-bidi-font-style:normal'>t<sub>i</sub></i>).</p>
+
+<p class=MsoNormal style='text-indent:21.3pt'>Toate obiectele abstracte care au
+acela&#351;i model formeaz&#259; o <i style='mso-bidi-font-style:normal'>clas&#259;</i>
+de obiecte. Atunci când avem o mul&#355;ime de obiecte din aceea&#351;i
+clas&#259;, toate aceste obiecte vor avea un set de propriet&#259;&#355;i
+comune, tocmai setul ce formeaz&#259; modelul clasei. Pentru a fi decelabile,
+obiectele concrete ale aceleia&#351;i clase (instan&#355;ele) vor trebui
+s&#259; mai aib&#259;, pe lâng&#259; atributele comune, &#351;i atribute
+specifice, atribute între care s&#259; existe diferen&#355;e nenule (contrast).</p>
+
+<p class=MsoNormal style='text-indent:21.3pt'>În cazul vectorilor (dar &#351;i
+al altor obiecte), contrastul cantitativ se evalueaz&#259; printr-o
+diferen&#355;&#259; dintre valorile unui atribut specific; dar noi am
+v&#259;zut c&#259; rela&#355;iile dintre dou&#259; sau mai multe obiecte sunt
+rela&#355;ii dintre sistemele lor interne de referin&#355;&#259;, sisteme
+evaluate fa&#355;&#259; de un sistem de referin&#355;&#259; extern, comun
+pentru to&#355;i vectorii mul&#355;imii.</p>
+
+<p class=MsoNormal style='text-indent:21.3pt'>Sistemul de referin&#355;&#259;
+intern al unui vector <i style='mso-bidi-font-style:normal'>k</i> (unde <i
+style='mso-bidi-font-style:normal'>k</i> este num&#259;rul de ordine al
+vectorului din mul&#355;imea ordonat&#259; a celor <i style='mso-bidi-font-style:
+normal'>n</i> vectori ce formeaz&#259; câmpul vectorial) este format din
+propriet&#259;&#355;ile P5, din care referin&#355;&#259; poate fi ori starea
+final&#259; <i style='mso-bidi-font-style:normal'>S<sub>0k</sub>(t<sub>f</sub>)</i>,
+ori starea ini&#355;ial&#259; <i style='mso-bidi-font-style:normal'>S<sub>0k</sub>(t<sub>i</sub>)</i>.
+În cazul câmpurilor de viteze, definite fa&#355;&#259; de un SR extern, cele
+dou&#259; st&#259;ri (elemente ale unei distribu&#355;ii spa&#355;iale primare)
+sunt pozi&#355;iile:</p>
+
+<p class=MTDisplayEquation><span style='mso-tab-count:1'>                                                         </span><span
+style='position:relative;top:6.0pt;mso-text-raise:-6.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1029" type="#_x0000_t75" style='width:69.75pt;height:18pt' o:ole=""
+ fillcolor="window">
+ <v:imagedata src="x17_files/image003.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=93 height=24
+src="x17_files/image004.gif" v:shapes="_x0000_i1029"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1029"
+  DrawAspect="Content" ObjectID="_1278082538">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-tab-count:1'>                                                   </span>(X.17.1)</p>
+
+<p class=MsoNormal style='text-indent:0in'>&#351;i:</p>
+
+<p class=MTDisplayEquation><span style='mso-tab-count:1'>                                                        </span><span
+style='position:relative;top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1030" type="#_x0000_t75" style='width:75pt;height:18.75pt' o:ole=""
+ fillcolor="window">
+ <v:imagedata src="x17_files/image005.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=100 height=25
+src="x17_files/image006.gif" v:shapes="_x0000_i1030"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1030"
+  DrawAspect="Content" ObjectID="_1278082539">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-tab-count:1'>                                                  </span>(X.17.2)</p>
+<p class=MTDisplayEquation>&nbsp;</p>
+<p class=MTDisplayEquation><span style='mso-spacerun:yes'> </span>Starea <i
+style='mso-bidi-font-style:normal'>S<sub>1k</sub>(t<sub>f</sub>)</i>, viteza,
+este densitatea elementului de distribu&#355;ie derivat&#259; de ordinul I a
+distribu&#355;iei spa&#355;iale primare:</p>
+
+<p class=MTDisplayEquation><span style='mso-tab-count:1'>                                    </span><span
+style='position:relative;top:16.0pt;mso-text-raise:-16.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1031" type="#_x0000_t75" style='width:198pt;height:36.75pt' o:ole=""
+ fillcolor="window">
+ <v:imagedata src="x17_files/image007.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=264 height=49
+src="x17_files/image008.gif" v:shapes="_x0000_i1031"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1031"
+  DrawAspect="Content" ObjectID="_1278082540">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-tab-count:1'>                             </span>(X.17.3)</p>
+<p class=MTDisplayEquation>&nbsp;</p>
+<p class=MsoNormal>Câmpul vitezelor este format a&#351;adar din <i
+style='mso-bidi-font-style:normal'>n</i> vectori, existen&#355;i simultan în
+intervalul <span style='position:relative;top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1032" type="#_x0000_t75" style='width:20.25pt;height:18.75pt'
+ o:ole="">
+ <v:imagedata src="x17_files/image009.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=27 height=25
+src="x17_files/image010.gif" v:shapes="_x0000_i1032"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1032"
+  DrawAspect="Content" ObjectID="_1278082541">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>(interval cu
+referin&#355;a intern&#259; dreapta la momentul <i style='mso-bidi-font-style:
+normal'>t<sub>f</sub></i>), cu pozi&#355;ii spa&#355;iale disjuncte,
+pozi&#355;ii date de mul&#355;imile <span style='position:relative;top:7.0pt;
+mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1033" type="#_x0000_t75"
+ style='width:36.75pt;height:20.25pt' o:ole="" fillcolor="window">
+ <v:imagedata src="x17_files/image011.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=49 height=27
+src="x17_files/image012.gif" v:shapes="_x0000_i1033"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1033"
+  DrawAspect="Content" ObjectID="_1278082542">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>(mul&#355;imea
+punctelor de aplica&#355;ie) &#351;i <span style='position:relative;top:8.0pt;
+mso-text-raise:-8.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1034" type="#_x0000_t75"
+ style='width:39.75pt;height:21.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="x17_files/image013.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=53 height=29
+src="x17_files/image014.gif" v:shapes="_x0000_i1034"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1034"
+  DrawAspect="Content" ObjectID="_1278082543">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>(mul&#355;imea
+vârfurilor vectorilor vitez&#259;). Dac&#259; &#355;inem cont de faptul c&#259;
+viteza spa&#355;ial&#259; este o proprietate a unor SM, principiul excluziunii
+spa&#355;io-temporale a SM postuleaz&#259; c&#259; atât mul&#355;imea <span
+style='position:relative;top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1035" type="#_x0000_t75" style='width:36.75pt;height:20.25pt'
+ o:ole="" fillcolor="window">
+ <v:imagedata src="x17_files/image011.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=49 height=27
+src="x17_files/image012.gif" v:shapes="_x0000_i1035"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1035"
+  DrawAspect="Content" ObjectID="_1278082544">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>cât &#351;i <span
+style='position:relative;top:8.0pt;mso-text-raise:-8.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1036" type="#_x0000_t75" style='width:39.75pt;height:21.75pt'
+ o:ole="" fillcolor="window">
+ <v:imagedata src="x17_files/image013.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=53 height=29
+src="x17_files/image014.gif" v:shapes="_x0000_i1036"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1036"
+  DrawAspect="Content" ObjectID="_1278082545">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>sunt seturi, deoarece
+pozi&#355;iile spa&#355;iale ale mai multor SM la acela&#351;i moment <i
+style='mso-bidi-font-style:normal'>t</i> nu pot fi identice. Cu alte cuvinte,
+pozi&#355;iile spa&#355;iale ale vectorilor din câmpul vitezelor sunt atribute
+specifice externe pentru aceste obiecte. Setul pozi&#355;iilor <span
+style='position:relative;top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1037" type="#_x0000_t75" style='width:36.75pt;height:20.25pt'
+ o:ole="" fillcolor="window">
+ <v:imagedata src="x17_files/image011.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=49 height=27
+src="x17_files/image012.gif" v:shapes="_x0000_i1037"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1037"
+  DrawAspect="Content" ObjectID="_1278082546">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>este un obiect
+abstract compus, pentru care putem defini o <i style='mso-bidi-font-style:normal'>referin&#355;&#259;
+intern&#259; natural&#259;</i>, referin&#355;&#259; ce va constitui o
+component&#259; comun&#259; (fiind o referin&#355;&#259;) pentru toate
+obiectele din set.</p>
+
+<p class=MsoNormal>Referin&#355;a intern&#259; natural&#259; a unui set format
+din <i style='mso-bidi-font-style:normal'>n</i> valori <span style='position:
+relative;top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1038"
+ type="#_x0000_t75" style='width:36.75pt;height:20.25pt' o:ole="" fillcolor="window">
+ <v:imagedata src="x17_files/image011.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=49 height=27
+src="x17_files/image012.gif" v:shapes="_x0000_i1038"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1038"
+  DrawAspect="Content" ObjectID="_1278082547">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>este media
+aritmetic&#259; a valorilor setului, dat&#259; de rela&#355;ia:</p>
+
+<p class=MTDisplayEquation><span style='mso-tab-count:1'>                                                       </span><span
+style='position:relative;top:14.0pt;mso-text-raise:-14.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1039" type="#_x0000_t75" style='width:86.25pt;height:33.75pt'
+ o:ole="" fillcolor="window">
+ <v:imagedata src="x17_files/image015.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=115 height=45
+src="x17_files/image016.gif" v:shapes="_x0000_i1039"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1039"
+  DrawAspect="Content" ObjectID="_1278082548">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-tab-count:1'>                                                </span>(X.17.4)</p>
+<p class=MTDisplayEquation>&nbsp;</p>
+<p class=MsoNormal style='text-indent:0in'>astfel încât fiecare proprietate din
+mul&#355;imea <span style='position:relative;top:7.0pt;mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1040" type="#_x0000_t75" style='width:36.75pt;height:20.25pt'
+ o:ole="" fillcolor="window">
+ <v:imagedata src="x17_files/image011.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=49 height=27
+src="x17_files/image012.gif" v:shapes="_x0000_i1040"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1040"
+  DrawAspect="Content" ObjectID="_1278082549">
+ </o:OLEObject>
+</xml><![endif]-->este format&#259; din dou&#259; componente:</p>
+<p class=MsoNormal style='text-indent:0in'>&nbsp;</p>
+<p class=MTDisplayEquation><span style='mso-tab-count:1'>                                                    </span><span
+style='position:relative;top:6.0pt;mso-text-raise:-6.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1041" type="#_x0000_t75" style='width:99.75pt;height:18pt' o:ole=""
+ fillcolor="window">
+ <v:imagedata src="x17_files/image017.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=133 height=24
+src="x17_files/image018.gif" v:shapes="_x0000_i1041"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1041"
+  DrawAspect="Content" ObjectID="_1278082550">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-tab-count:1'>                                              </span>(X.17.5)</p>
+<p class=MTDisplayEquation>&nbsp;</p>
+<p class=MsoNormal style='text-indent:0in'>unde <span style='position:relative;
+top:6.0pt;mso-text-raise:-6.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1042"
+ type="#_x0000_t75" style='width:27pt;height:18pt' o:ole="" fillcolor="window">
+ <v:imagedata src="x17_files/image019.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=36 height=24
+src="x17_files/image020.gif" v:shapes="_x0000_i1042"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1042"
+  DrawAspect="Content" ObjectID="_1278082552">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>este componenta
+comun&#259; a tuturor obiectelor la momentul <i style='mso-bidi-font-style:
+normal'>t<sub>i</sub></i> (referin&#355;a natural&#259; intern&#259;) iar <span
+style='position:relative;top:6.0pt;mso-text-raise:-6.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1043" type="#_x0000_t75" style='width:30.75pt;height:18pt' o:ole=""
+ fillcolor="window">
+ <v:imagedata src="x17_files/image021.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=41 height=24
+src="x17_files/image022.gif" v:shapes="_x0000_i1043"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1043"
+  DrawAspect="Content" ObjectID="_1278082553">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>este <i
+style='mso-bidi-font-style:normal'>proprietatea specific&#259; natural&#259;</i>
+a obiectului <i style='mso-bidi-font-style:normal'>k</i> (abaterea, dispersia),
+la acela&#351;i moment (fa&#355;&#259; de referin&#355;a natural&#259;
+intern&#259;).</p>
+
+<p class=MTDisplayEquation style='tab-stops:.5in'>Propriet&#259;&#355;ile
+specifice naturale au proprietatea fundamental&#259; de a avea referin&#355;a
+natural&#259; intern&#259; nul&#259; (propriet&#259;&#355;ile specifice nu au
+component&#259; comun&#259;). Vom avea a&#351;adar:</p>
+
+<p class=MTDisplayEquation><span style='mso-tab-count:1'>                                                         </span><span
+style='position:relative;top:14.0pt;mso-text-raise:-14.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1044" type="#_x0000_t75" style='width:1in;height:33.75pt' o:ole=""
+ fillcolor="window">
+ <v:imagedata src="x17_files/image023.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=96 height=45
+src="x17_files/image024.gif" v:shapes="_x0000_i1044"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1044"
+  DrawAspect="Content" ObjectID="_1278082554">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-tab-count:1'>                                                  </span>(X.17.6)</p>
+<p class=MTDisplayEquation>&nbsp;</p>
+<p class=MsoNormal style='text-indent:21.3pt'>Obiectul abstract <span
+style='position:relative;top:6.0pt;mso-text-raise:-6.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1045" type="#_x0000_t75" style='width:27pt;height:18pt' o:ole=""
+ fillcolor="window">
+ <v:imagedata src="x17_files/image025.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=36 height=24
+src="x17_files/image020.gif" v:shapes="_x0000_i1045"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1045"
+  DrawAspect="Content" ObjectID="_1278082555">
+ </o:OLEObject>
+</xml><![endif]-->, dat de rela&#355;ia X.17.4 reprezint&#259; <i
+style='mso-bidi-font-style:normal'>pozi&#355;ia global&#259;</i> (de ansamblu)
+a mul&#355;imii obiectelor (a câmpului vectorial) la momentul <i
+style='mso-bidi-font-style:normal'>t<sub>i</sub></i>, fa&#355;&#259; de
+referin&#355;a de pozi&#355;ie extern&#259;.</p>
+
+<p class=MsoNormal style='text-indent:21.3pt'>În mod similar vom avea la
+momentul <i style='mso-bidi-font-style:normal'>t<sub>f</sub></i>:</p>
+
+<p class=MTDisplayEquation><span style='mso-tab-count:1'>                                                      </span><span
+style='position:relative;top:14.0pt;mso-text-raise:-14.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1046" type="#_x0000_t75" style='width:92.25pt;height:33.75pt'
+ o:ole="" fillcolor="window">
+ <v:imagedata src="x17_files/image026.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=123 height=45
+src="x17_files/image027.gif" v:shapes="_x0000_i1046"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1046"
+  DrawAspect="Content" ObjectID="_1278082556">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-tab-count:1'>                                               </span>(X.17.7)</p>
+<p class=MTDisplayEquation>&nbsp;</p>
+<p class=MsoNormal>Dac&#259; <span style='position:relative;top:7.0pt;
+mso-text-raise:-7.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1047" type="#_x0000_t75"
+ style='width:65.25pt;height:18.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="x17_files/image028.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=87 height=25
+src="x17_files/image029.gif" v:shapes="_x0000_i1047"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1047"
+  DrawAspect="Content" ObjectID="_1278082557">
+ </o:OLEObject>
+</xml><![endif]-->, înseamn&#259; c&#259; exist&#259; o mi&#351;care de
+ansamblu a mul&#355;imii de obiecte cu viteza comun&#259; (global&#259;):</p>
+
+<p class=MTDisplayEquation><span style='mso-tab-count:1'>                                            </span><span
+style='position:relative;top:12.0pt;mso-text-raise:-12.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1048" type="#_x0000_t75" style='width:150.75pt;height:33pt' o:ole=""
+ fillcolor="window">
+ <v:imagedata src="x17_files/image030.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=201 height=44
+src="x17_files/image031.gif" v:shapes="_x0000_i1048"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1048"
+  DrawAspect="Content" ObjectID="_1278082558">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-tab-count:1'>                                     </span>(X.17.8)</p>
+<p class=MTDisplayEquation>&nbsp;</p>
+<p class=MsoNormal style='text-indent:0in'>care este &#351;i ea o
+referin&#355;&#259; natural&#259; a câmpului de viteze, fa&#355;&#259; de care
+vor rezulta o mul&#355;ime de viteze specifice naturale. Toate acestea se
+ob&#355;in prin derivarea rela&#355;iei X.17.5 în raport cu timpul, din care
+rezult&#259; :</p>
+
+<p class=MTDisplayEquation><span style='mso-tab-count:1'>                                                     </span><span
+style='position:relative;top:6.0pt;mso-text-raise:-6.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1025" type="#_x0000_t75" style='width:96pt;height:18pt' o:ole=""
+ fillcolor="window">
+ <v:imagedata src="x17_files/image032.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=128 height=24
+src="x17_files/image033.gif" v:shapes="_x0000_i1025"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1025"
+  DrawAspect="Content" ObjectID="_1278082559">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-tab-count:1'>                                              </span>(X.17.9)</p>
+<p class=MTDisplayEquation>&nbsp;</p>
+<p class=MsoNormal>Mi&#351;carea global&#259; poate fi &#351;i ea
+variabil&#259; în timp, a&#351;adar va putea exista o accelera&#355;ie
+global&#259; <span style='position:relative;top:6.0pt;mso-text-raise:-6.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1026" type="#_x0000_t75" style='width:26.25pt;height:18pt' o:ole=""
+ fillcolor="window">
+ <v:imagedata src="x17_files/image034.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=35 height=24
+src="x17_files/image035.gif" v:shapes="_x0000_i1026"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1026"
+  DrawAspect="Content" ObjectID="_1278082560">
+ </o:OLEObject>
+</xml><![endif]-->, o varia&#355;ie global&#259; a accelera&#355;iei
+&#351;.a.m.d. Împortant pentru noi este faptul c&#259; toate m&#259;rimile
+globale, fiind referin&#355;e naturale, sunt propriet&#259;&#355;i comune
+tuturor vectorilor din câmpul vectorial.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+<div style='mso-element:footnote-list'><![if !supportFootnotes]><br clear=all>
+
+<hr align=left size=1 width="33%">
+
+<![endif]>
+
+<div style='mso-element:footnote' id=ftn1>
+
+<p class=MsoFootnoteText><a style='mso-footnote-id:ftn1' href="#_ftnref1"
+name="_ftn1" title=""><span class=MsoFootnoteReference><span lang=RO><span
+style='mso-special-character:footnote'><![if !supportFootnotes]><span
+class=MsoFootnoteReference><span lang=RO style='font-size:10.0pt;mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:RO;mso-fareast-language:EN-US;mso-bidi-language:
+AR-SA'>[1]</span></span><![endif]></span></span></span></a><span lang=RO>
+Afirma&#355;ia este valabil&#259; pentru distribu&#355;iile derivate de ordinul
+I. În cazul general, un PES de tip P<sub>n</sub> are ca frontiere dou&#259;
+st&#259;ri de tip S<sub>n-1</sub>.</span></p>
+
+</div>
+
+</div>
+<div class="NAVFOOTER">
+            <hr align="left" width="100%" >
+            <table summary="Footer navigation table" border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tbody><tr>
+                  		<td align="center" valign="top" width="33%"><a href="../index.html" accesskey="I"><b>CUPRINS</b></a></td>
+                                               </tr>
+            </tbody></table>
+            <hr >
+        </div>
+        <div align="center" class="color">
+            <p>Copyright &copy; 2006-2008 Aurel Rusu. All rights reserved.</p>
+        </div>
+</body>
+
+</html>

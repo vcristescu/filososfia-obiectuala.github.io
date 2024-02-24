@@ -1,0 +1,679 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="x151_files/filelist.xml">
+<link rel=Edit-Time-Data href="x151_files/editdata.mso">
+<link rel=OLE-Object-Data href="x151_files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Vectorul densitate de flux (VDF)</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Dany</o:Author>
+  <o:LastAuthor>Dany</o:LastAuthor>
+  <o:Revision>1</o:Revision>
+  <o:TotalTime>0</o:TotalTime>
+  <o:Created>2008-07-20T14:54:00Z</o:Created>
+  <o:LastSaved>2008-07-20T14:54:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>635</o:Words>
+  <o:Characters>3621</o:Characters>
+  <o:Lines>30</o:Lines>
+  <o:Paragraphs>8</o:Paragraphs>
+  <o:CharactersWithSpaces>4248</o:CharactersWithSpaces>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:21.75pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h2
+	{mso-style-next:"Body Text";
+	margin-top:8.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-align:justify;
+	text-indent:21.25pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-font-kerning:14.0pt;
+	mso-ansi-language:RO;
+	mso-bidi-font-weight:normal;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{mso-style-noshow:yes;
+	mso-style-next:"Body Text";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	text-align:center;
+	text-indent:21.25pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:RO;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-align:justify;
+	text-indent:21.75pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.Comentariu, li.Comentariu, div.Comentariu
+	{mso-style-name:Comentariu;
+	margin-top:0in;
+	margin-right:14.2pt;
+	margin-bottom:0in;
+	margin-left:14.2pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:28.35pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:black;
+	mso-ansi-language:RO;}
+p.MTDisplayEquation, li.MTDisplayEquation, div.MTDisplayEquation
+	{mso-style-name:MTDisplayEquation;
+	mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:21.25pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 227.0pt right 454.0pt;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35887416-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+<hr >
+<div align="center">
+          <table width="80%">
+          <tbody>
+                  <tr>
+                    <td>
+                        <a href="http://filosofia.obiectuala.ro"><img border="0" src="../../img/fo3.jpg" height="110" width="890" alt="filozofia obiectuala" ></a>
+                    </td>
+                  </tr>
+           </tbody>
+       </table>
+       </div>
+       <hr >
+<div class=Section1>
+
+<h2><a name="_Toc194477611"><span lang=RO>X.15.1 Vectorul densitate de flux (VDF)</span></a></h2>
+
+<p class=MsoNormal><span class=SpellE>Densitatea</span> <span class=SpellE><span
+class=GramE>este</span></span> o <span class=SpellE>m&#259;rime</span> <span
+class=SpellE>caracteristic&#259;</span> <span class=SpellE>numai</span> <span
+class=SpellE>distribu&#355;iilor</span> <span class=SpellE>uniforme</span>, <span
+class=SpellE>&#351;i</span> <span class=SpellE>reprezint&#259;</span> o <span
+class=SpellE>m&#259;rime</span> <span class=SpellE>abstract&#259;</span> (<span
+class=SpellE>rezultatul</span> <span class=SpellE>unui</span> <span
+class=SpellE>proces</span> abstract, de <span class=SpellE>calcul</span>) <span
+class=SpellE>dat&#259;</span> de <span class=SpellE>raportul</span> <span
+class=SpellE>dintre</span> <span class=SpellE>m&#259;rimea</span> <span
+class=SpellE>distribuit&#259;</span> <span class=SpellE>&#351;i</span> <span
+class=SpellE>m&#259;rimea</span> <span class=SpellE>domeniului</span> <span
+class=SpellE>suport</span> al <span class=SpellE>distribu&#355;iei</span>. <span
+class=SpellE>În</span> <span class=SpellE>termeni</span> <span class=SpellE>mai</span>
+<span class=SpellE>u&#351;or</span> de <span class=SpellE>în&#355;eles</span>, <span
+class=SpellE>densitatea</span> <span class=SpellE>reprezint&#259;</span> <span
+class=SpellE>gradul</span> de “<span class=SpellE>înghesuire</span>” a <span
+class=SpellE>m&#259;rimii</span> <span class=SpellE>distribuite</span> <span
+class=SpellE>pe</span> <span class=SpellE>intervalul</span> <span class=SpellE>suport</span>,
+<span class=SpellE>sau</span> (<span class=SpellE>pentru</span> <span
+class=SpellE>atributele</span> cumulative) <span class=SpellE>cantitatea</span>
+de <span class=SpellE>atribut</span> <span class=SpellE>distribuit</span> <span
+class=SpellE>pe</span> <span class=SpellE>suportul</span> abstract de <span
+class=SpellE>m&#259;rime</span> <span class=SpellE>unitate</span>. <span
+class=SpellE>Fiind</span> o <span class=SpellE>m&#259;rime</span> <span
+class=SpellE>abstract&#259;</span>, <span class=SpellE>densitatea</span> <span
+class=SpellE>nu</span> <span class=SpellE>poate</span> <span class=SpellE>exista</span>
+<span class=SpellE>în</span> <span class=SpellE>lipsa</span> <span
+class=SpellE>unui</span> SSI care <span class=SpellE>s&#259;-i</span> <span
+class=SpellE>con&#355;in&#259;</span> <span class=SpellE>valoarea</span> <span
+class=SpellE>&#351;i</span> a <span class=SpellE>unui</span> SPI care <span
+class=SpellE><span class=GramE>s&#259;</span></span> o <span class=SpellE>fi</span>
+<span class=SpellE>calculat</span>, <span class=SpellE>dar</span> <span
+class=SpellE>utilizarea</span> <span class=SpellE>sa</span> <span class=SpellE>este</span>
+<span class=SpellE>foarte</span> <span class=SpellE>larg&#259;</span> <span
+class=SpellE>fiind</span> <span class=SpellE>printre</span> <span class=SpellE>altele</span>
+<span class=SpellE>singurul</span> <span class=SpellE>atribut</span> <span
+class=SpellE>ce</span> <span class=SpellE>permite</span> <span class=SpellE>evaluarea</span>
+<span class=SpellE>intensit&#259;&#355;ii</span> <span class=SpellE>proceselor</span>.</p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'> </span><span class=SpellE><span
+class=GramE>Intensitatea</span></span><span class=GramE> <span class=SpellE>unui</span>
+<span class=SpellE>proces</span> <span class=SpellE>distribuit</span> de <span
+class=SpellE>mi&#351;care</span> se <span class=SpellE>evalueaz&#259;</span> cu
+<span class=SpellE>ajutorul</span> <span class=SpellE>unei</span> <span
+class=SpellE>suprafe&#355;e</span> <span class=SpellE>virtuale</span> (<span
+class=SpellE>teoretice</span>, <span class=SpellE>imaginare</span>, de <span
+class=SpellE>calcul</span>) cu <span class=SpellE>pozi&#355;ie</span> <span
+class=SpellE>spa&#355;ial&#259;</span> <span class=SpellE>fix&#259;</span> <span
+class=SpellE>fa&#355;&#259;</span> de o <span class=SpellE>referin&#355;&#259;</span>
+<span class=SpellE>extern&#259;</span> (<span class=SpellE>aceea&#351;i</span> <span
+class=SpellE>referin&#355;&#259;</span> <span class=SpellE>fa&#355;&#259;</span>
+de care se <span class=SpellE>evalueaz&#259;</span> <span class=SpellE>viteza</span>
+de <span class=SpellE>mi&#351;care</span> <span class=SpellE>distribuit&#259;</span>).</span></p>
+<p class=MsoNormal>&nbsp;</p>
+<p class=MsoNormal align=center style='text-align:center;text-indent:0in'><span
+style='mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1037" type="#_x0000_t75" style='width:272.25pt;
+ height:173.25pt' o:ole="" fillcolor="window">
+ <v:imagedata src="x151_files/image001.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=363 height=231
+src="x151_files/image002.gif" v:shapes="_x0000_i1037"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Word.Picture.8" ShapeID="_x0000_i1037"
+  DrawAspect="Content" ObjectID="_1278082332">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoCaption style='text-indent:0in'><span lang=RO>Fig. X.15.1.1</span></p>
+
+<p class=MsoNormal>Fie <span class=SpellE>volumul</span> <i style='mso-bidi-font-style:
+normal'>V</i> din fig. X.15.1.1 <span class=SpellE><span class=GramE>ce</span></span>
+<span class=SpellE>con&#355;ine</span> <span class=SpellE>m&#259;rimea</span> <i
+style='mso-bidi-font-style:normal'>M</i>, uniform <span class=SpellE>distribuit&#259;</span>
+cu <span class=SpellE>densitatea</span>:</p>
+
+<p class=MTDisplayEquation><span style='mso-tab-count:1'>                                                             </span><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1038" type="#_x0000_t75" style='width:45.75pt;height:30.75pt'
+ o:ole="" fillcolor="window">
+ <v:imagedata src="x151_files/image003.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=61 height=41
+src="x151_files/image004.gif" v:shapes="_x0000_i1038"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1038"
+  DrawAspect="Content" ObjectID="_1278082333">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-tab-count:1'>                                                    </span>(X.15.1.1)</p>
+
+<p class=MsoNormal style='text-indent:0in'><span class=SpellE><span
+class=GramE>&#351;i</span></span> o <span class=SpellE>suprafa&#355;&#259;</span>
+<span class=SpellE>plan&#259;</span> <span class=SpellE>teoretic&#259;</span>
+de <span class=SpellE>referin&#355;&#259;</span> <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1039" type="#_x0000_t75" style='width:11.25pt;height:12pt' o:ole="">
+ <v:imagedata src="x151_files/image005.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=15 height=16
+src="x151_files/image006.gif" v:shapes="_x0000_i1039"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1039"
+  DrawAspect="Content" ObjectID="_1278082334">
+ </o:OLEObject>
+</xml><![endif]-->, cu <span class=SpellE>pozi&#355;ie</span> <span
+class=SpellE>fix&#259;</span> <span class=SpellE>fa&#355;&#259;</span> de o <span
+class=SpellE>referin&#355;&#259;</span> <span class=SpellE>extern&#259;</span>.</p>
+
+<p class=MsoNormal style='text-indent:21.3pt'><span class=SpellE>Referin&#355;a</span>
+<span class=SpellE>intern&#259;</span> T (cu <span class=SpellE>pozi&#355;ie</span>
+<span class=SpellE>intern&#259;</span> <span class=SpellE>central&#259;</span>)
+a <span class=SpellE>volumului</span> <i style='mso-bidi-font-style:normal'>V</i>
+are <span class=SpellE>fa&#355;&#259;</span> de <span class=SpellE>aceea&#351;i</span>
+<span class=SpellE>referin&#355;&#259;</span> <span class=SpellE>extern&#259;</span>
+<span class=SpellE>vectorul</span> de <span class=SpellE>pozi&#355;ie</span> <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1040" type="#_x0000_t75" style='width:11.25pt;height:12pt' o:ole=""
+ fillcolor="window">
+ <v:imagedata src="x151_files/image007.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=15 height=16
+src="x151_files/image008.gif" v:shapes="_x0000_i1040"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1040"
+  DrawAspect="Content" ObjectID="_1278082335">
+ </o:OLEObject>
+</xml><![endif]-->(<span class=SpellE>nefigurat</span> <span class=SpellE>în</span>
+fig. <span class=GramE>X.15.1.1 <span class=SpellE>pentru</span> a <span
+class=SpellE>nu</span> <span class=SpellE>complica</span> <span class=SpellE>desenul</span>).</span>
+<span class=SpellE>S&#259;</span> <span class=SpellE>presupunem</span> <span
+class=SpellE>c&#259;</span> la <span class=GramE>un</span> moment <i
+style='mso-bidi-font-style:normal'>t<sub>0</sub></i>, <span class=SpellE>volumul</span>
+<i style='mso-bidi-font-style:normal'>V</i>, cu tot cu <span class=SpellE>m&#259;rimea</span>
+<i style='mso-bidi-font-style:normal'>M</i> <span class=SpellE>distribuit&#259;</span>
+uniform <span class=SpellE>în</span> el, <span class=SpellE>începe</span> <span
+class=SpellE>s&#259;</span> se <span class=SpellE>mi&#351;te</span> cu <span
+class=SpellE>viteza</span>:</p>
+<p class=MsoNormal style='text-indent:21.3pt'>&nbsp;</p>
+<p class=MTDisplayEquation><span style='mso-tab-count:1'>                                                               </span><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1041" type="#_x0000_t75" style='width:38.25pt;height:30.75pt'
+ o:ole="" fillcolor="window">
+ <v:imagedata src="x151_files/image009.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=51 height=41
+src="x151_files/image010.gif" v:shapes="_x0000_i1041"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1041"
+  DrawAspect="Content" ObjectID="_1278082336">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-tab-count:1'>                                                     </span>(X.15.1.2)</p>
+
+<p class=MsoNormal style='text-indent:0in'><span class=SpellE>considerat&#259;</span>
+<span class=SpellE>uniform&#259;</span> (<span class=SpellE>constant&#259;</span>)
+<span class=SpellE>în</span> <span class=SpellE>intervalul</span> <i
+style='mso-bidi-font-style:normal'><span style='font-family:Symbol;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;
+mso-symbol-font-family:Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:
+Symbol'>D</span></span>t</i>. <span class=SpellE>Intersec&#355;ia</span> <span
+class=SpellE>dintre</span> <span class=SpellE>volumul</span> <i
+style='mso-bidi-font-style:normal'>V</i> <span class=SpellE>aflat</span> <span
+class=SpellE>în</span> <span class=SpellE>mi&#351;care</span> <span
+class=SpellE>&#351;i</span> <span class=SpellE>suprafa&#355;a</span> de <span
+class=SpellE>referin&#355;&#259;</span> <sub><!--[if gte vml 1]><v:shape id="_x0000_i1042"
+ type="#_x0000_t75" style='width:11.25pt;height:12pt' o:ole="">
+ <v:imagedata src="x151_files/image005.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=15 height=16
+src="x151_files/image006.gif" v:shapes="_x0000_i1042"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1042"
+  DrawAspect="Content" ObjectID="_1278082337">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span><span class=SpellE>este</span>
+<sub><!--[if gte vml 1]><v:shape id="_x0000_i1043" type="#_x0000_t75" style='width:12pt;
+ height:11.25pt' o:ole="">
+ <v:imagedata src="x151_files/image011.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=16 height=15
+src="x151_files/image012.gif" v:shapes="_x0000_i1043"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1043"
+  DrawAspect="Content" ObjectID="_1278082338">
+ </o:OLEObject>
+</xml><![endif]-->, o <span class=SpellE>suprafa&#355;&#259;</span> cu <span
+class=SpellE>normala</span> <sub><!--[if gte vml 1]><v:shape id="_x0000_i1044"
+ type="#_x0000_t75" style='width:11.25pt;height:12.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="x151_files/image013.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=15 height=17
+src="x151_files/image014.gif" v:shapes="_x0000_i1044"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1044"
+  DrawAspect="Content" ObjectID="_1278082339">
+ </o:OLEObject>
+</xml><![endif]-->(<span class=SpellE>aceea&#351;i</span> cu <span
+class=SpellE>normala</span> la <sub><!--[if gte vml 1]><v:shape id="_x0000_i1045"
+ type="#_x0000_t75" style='width:11.25pt;height:12pt' o:ole="">
+ <v:imagedata src="x151_files/image005.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=15 height=16
+src="x151_files/image006.gif" v:shapes="_x0000_i1045"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1045"
+  DrawAspect="Content" ObjectID="_1278082340">
+ </o:OLEObject>
+</xml><![endif]-->) <span class=SpellE>prin</span> care are loc <span
+class=SpellE>transferul</span> (<span class=SpellE>deplasarea</span>) <span
+class=SpellE>m&#259;rimii</span> <i style='mso-bidi-font-style:normal'>M</i>. <span
+class=SpellE>În</span> <span class=SpellE>intervalul</span> <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1046" type="#_x0000_t75" style='width:15pt;height:14.25pt' o:ole="">
+ <v:imagedata src="x151_files/image015.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=20 height=19
+src="x151_files/image016.gif" v:shapes="_x0000_i1046"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1046"
+  DrawAspect="Content" ObjectID="_1278082341">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span><span class=SpellE>va</span>
+<span class=SpellE>trece</span> <span class=SpellE>prin</span> <span
+class=SpellE>suprafa&#355;a</span> <sub><!--[if gte vml 1]><v:shape id="_x0000_i1047"
+ type="#_x0000_t75" style='width:12pt;height:11.25pt' o:ole="">
+ <v:imagedata src="x151_files/image017.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=16 height=15
+src="x151_files/image012.gif" v:shapes="_x0000_i1047"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1047"
+  DrawAspect="Content" ObjectID="_1278082342">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>o <span class=SpellE>cantitate</span>:</p>
+<p class=MsoNormal style='text-indent:0in'>&nbsp;</p>
+<p class=MTDisplayEquation><span style='mso-tab-count:1'>                                                </span><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1048" type="#_x0000_t75" style='width:123.75pt;height:18pt' o:ole=""
+ fillcolor="window">
+ <v:imagedata src="x151_files/image018.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=165 height=24
+src="x151_files/image019.gif" v:shapes="_x0000_i1048"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1048"
+  DrawAspect="Content" ObjectID="_1278082343">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-tab-count:1'>                                       </span>(X.15.1.3)</p>
+<p class=MTDisplayEquation>&nbsp;</p>
+<p class=MsoNormal><span class=SpellE>Dac&#259;</span> <span class=SpellE>împ&#259;r&#355;im</span>
+<span class=SpellE>rela&#355;ia</span> X.15.1.3 cu <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1049" type="#_x0000_t75" style='width:15pt;height:14.25pt' o:ole="">
+ <v:imagedata src="x151_files/image020.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=20 height=19
+src="x151_files/image016.gif" v:shapes="_x0000_i1049"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1049"
+  DrawAspect="Content" ObjectID="_1278082344">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span><span class=SpellE>ob&#355;inem</span>:</p>
+<p class=MsoNormal>&nbsp;</p>
+<p class=MTDisplayEquation><span style='mso-tab-count:1'>                                 </span><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1025" type="#_x0000_t75" style='width:213pt;height:35.25pt' o:ole=""
+ fillcolor="window">
+ <v:imagedata src="x151_files/image021.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=284 height=47
+src="x151_files/image022.gif" v:shapes="_x0000_i1025"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1025"
+  DrawAspect="Content" ObjectID="_1278082345">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-tab-count:1'>                        </span>(X.15.1.4)</p>
+
+<p class=MsoNormal style='text-indent:0in'><span class=SpellE><span
+class=GramE>rela&#355;ie</span></span> <span class=SpellE>identic&#259;</span>
+cu <span class=SpellE>rela&#355;ia</span> 5.2.1.4 <span class=SpellE>ce</span> <span
+class=SpellE>define&#351;te</span> <span class=SpellE>în</span> <span
+class=SpellE>filosofia</span> <span class=SpellE>obiectual&#259;</span> <span
+class=SpellE>intensitatea</span> <span class=SpellE>fluxului</span> <span
+class=SpellE>vectorului</span> <sub><!--[if gte vml 1]><v:shape id="_x0000_i1026"
+ type="#_x0000_t75" style='width:17.25pt;height:18.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="x151_files/image023.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=23 height=25
+src="x151_files/image024.gif" v:shapes="_x0000_i1026"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1026"
+  DrawAspect="Content" ObjectID="_1278082346">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span><span class=SpellE>prin</span>
+<span class=SpellE>suprafa&#355;a</span> <sub><!--[if gte vml 1]><v:shape id="_x0000_i1027"
+ type="#_x0000_t75" style='width:12pt;height:11.25pt' o:ole="">
+ <v:imagedata src="x151_files/image025.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=16 height=15
+src="x151_files/image012.gif" v:shapes="_x0000_i1027"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1027"
+  DrawAspect="Content" ObjectID="_1278082347">
+ </o:OLEObject>
+</xml><![endif]-->. <span class=SpellE>Acest</span> vector <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1028" type="#_x0000_t75" style='width:51.75pt;height:18.75pt'
+ o:ole="" fillcolor="window">
+ <v:imagedata src="x151_files/image026.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=69 height=25
+src="x151_files/image027.gif" v:shapes="_x0000_i1028"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1028"
+  DrawAspect="Content" ObjectID="_1278082348">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>are o mare <span
+class=SpellE>importan&#355;&#259;</span> <span class=SpellE>în</span> <span
+class=SpellE>aceast&#259;</span> <span class=SpellE>lucrare</span>, <span
+class=SpellE>fiind</span> <span class=SpellE>denumit</span> <i
+style='mso-bidi-font-style:normal'>vector <span class=SpellE>densitate</span>
+de flux</i> (VDF) al <span class=SpellE>m&#259;rimii</span> <i
+style='mso-bidi-font-style:normal'>M</i>. <span class=SpellE>Observ&#259;m</span>
+<span class=SpellE>c&#259;</span> VDF <span class=SpellE>este</span> <span
+class=SpellE>întotdeauna</span> <span class=SpellE>colinear</span> cu <span
+class=SpellE>viteza</span> de transfer, el <span class=SpellE>fiind</span> <span
+class=SpellE>vectorul</span> <span class=SpellE>purt&#259;tor</span> al <span
+class=SpellE>m&#259;rimii</span> <span class=SpellE>abstracte</span> <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1029" type="#_x0000_t75" style='width:18pt;height:18pt' o:ole="">
+ <v:imagedata src="x151_files/image028.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=24 height=24
+src="x151_files/image029.gif" v:shapes="_x0000_i1029"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1029"
+  DrawAspect="Content" ObjectID="_1278082349">
+ </o:OLEObject>
+</xml><![endif]-->, <span class=SpellE>densitatea</span> <span class=SpellE>volumic&#259;</span>
+a <span class=SpellE>m&#259;rimii</span> de <span class=SpellE>transportat</span>.
+<span class=SpellE>În</span> <span class=SpellE>acest</span> <span
+class=SpellE>fel</span>, <span class=SpellE>fluxul</span> <span class=SpellE>m&#259;rimii</span>
+<i style='mso-bidi-font-style:normal'>M</i> <span class=SpellE>poate</span> <span
+class=SpellE>fi</span> <span class=SpellE>reprezentat</span> ca o <span
+class=SpellE>distribu&#355;ie</span> <span class=SpellE>vectorial&#259;</span>
+a VDF (<span class=GramE>un</span> <span class=SpellE>câmp</span> <span
+class=SpellE>vectorial</span>). <span class=SpellE>Dac&#259;</span> <span
+class=SpellE>distribu&#355;ia</span> de <span class=SpellE>volum</span> a <span
+class=SpellE>m&#259;rimii</span> <i style='mso-bidi-font-style:normal'>M</i> <span
+class=SpellE>nu</span> <span class=SpellE><span class=GramE>este</span></span> <span
+class=SpellE>uniform&#259;</span>, <span class=SpellE>vom</span> <span
+class=SpellE>diviza</span> <span class=SpellE>volumul</span> <i
+style='mso-bidi-font-style:normal'>V</i> <span class=SpellE>în</span> <span
+class=SpellE>elemente</span> de <span class=SpellE>volum</span> <span
+class=SpellE><i style='mso-bidi-font-style:normal'>dV</i></span> cu <span
+class=SpellE>dimensiuni</span> <span class=SpellE>astfel</span> <span
+class=SpellE>alese</span> <span class=SpellE>încât</span> <span class=SpellE>în</span>
+<span class=SpellE>interiorul</span> <span class=SpellE>lor</span> <span
+class=SpellE>distribu&#355;ia</span> <span class=SpellE>m&#259;rimii</span> <i
+style='mso-bidi-font-style:normal'>M</i> <span class=SpellE>s&#259;</span> fie <span
+class=SpellE>uniform&#259;</span>. <span class=SpellE>Intersec&#355;ia</span> <span
+class=SpellE>unui</span> <span class=SpellE>astfel</span> de element cu <span
+class=SpellE>suprafa&#355;a</span> <sub><!--[if gte vml 1]><v:shape id="_x0000_i1030"
+ type="#_x0000_t75" style='width:11.25pt;height:12pt' o:ole="">
+ <v:imagedata src="x151_files/image005.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=15 height=16
+src="x151_files/image006.gif" v:shapes="_x0000_i1030"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1030"
+  DrawAspect="Content" ObjectID="_1278082350">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span><span class=SpellE><span
+class=GramE>va</span></span> <span class=SpellE>fi</span> <sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1031" type="#_x0000_t75" style='width:18.75pt;height:14.25pt'
+ o:ole="">
+ <v:imagedata src="x151_files/image030.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=25 height=19
+src="x151_files/image031.gif" v:shapes="_x0000_i1031"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1031"
+  DrawAspect="Content" ObjectID="_1278082351">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span><span class=SpellE>iar</span>
+<span class=SpellE>intensitatea</span> <span class=SpellE>fluxului</span> <span
+class=SpellE>prin</span> <sub><!--[if gte vml 1]><v:shape id="_x0000_i1032"
+ type="#_x0000_t75" style='width:18.75pt;height:14.25pt' o:ole="">
+ <v:imagedata src="x151_files/image030.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=25 height=19
+src="x151_files/image031.gif" v:shapes="_x0000_i1032"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1032"
+  DrawAspect="Content" ObjectID="_1278082352">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span><span class=SpellE>va</span>
+<span class=SpellE>fi</span>:</p>
+<p class=MsoNormal style='text-indent:0in'>&nbsp;</p>
+<p class=MTDisplayEquation><span style='mso-tab-count:1'>                                    </span><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1033" type="#_x0000_t75" style='width:195.75pt;height:35.25pt'
+ o:ole="" fillcolor="window">
+ <v:imagedata src="x151_files/image032.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=261 height=47
+src="x151_files/image033.gif" v:shapes="_x0000_i1033"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1033"
+  DrawAspect="Content" ObjectID="_1278082353">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-tab-count:1'>                           </span>(X.15.1.5)</p>
+
+<p class=MsoNormal style='text-indent:0in'><span class=SpellE><span
+class=GramE>adic&#259;</span></span> <span class=SpellE>intensitatea</span> <span
+class=SpellE>unui</span> <i style='mso-bidi-font-style:normal'>flux <span
+class=SpellE>elementar</span></i>. <span class=SpellE>Dac&#259;</span> <span
+class=SpellE>în</span> <span class=SpellE>rela&#355;iile</span> X.15.1.4 <span
+class=SpellE>&#351;i</span> X.15.1.5 <span class=SpellE>facem</span> <span
+class=SpellE>raportul</span> <span class=SpellE>dintre</span> <span
+class=SpellE>intensitatea</span> <span class=SpellE>fluxului</span> <span
+class=SpellE>&#351;i</span> <span class=SpellE>m&#259;rimea</span> <span
+class=SpellE>suprafe&#355;ei</span> <sub><!--[if gte vml 1]><v:shape id="_x0000_i1034"
+ type="#_x0000_t75" style='width:12pt;height:11.25pt' o:ole="">
+ <v:imagedata src="x151_files/image034.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=16 height=15
+src="x151_files/image012.gif" v:shapes="_x0000_i1034"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1034"
+  DrawAspect="Content" ObjectID="_1278082354">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span><span class=SpellE>sau</span>
+<sub><!--[if gte vml 1]><v:shape id="_x0000_i1035" type="#_x0000_t75" style='width:18.75pt;
+ height:14.25pt' o:ole="">
+ <v:imagedata src="x151_files/image030.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=25 height=19
+src="x151_files/image031.gif" v:shapes="_x0000_i1035"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1035"
+  DrawAspect="Content" ObjectID="_1278082355">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span><span class=SpellE>ob&#355;inem</span>
+<span class=SpellE>densitatea</span> <span class=SpellE>superficial&#259;</span>
+<span class=GramE>a</span> <span class=SpellE>intensit&#259;&#355;ii</span> <span
+class=SpellE>fluxului</span>:</p>
+<p class=MsoNormal style='text-indent:0in'>&nbsp;</p>
+<p class=MTDisplayEquation><span style='mso-tab-count:1'>                                                </span><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1036" type="#_x0000_t75" style='width:123pt;height:30.75pt' o:ole=""
+ fillcolor="window">
+ <v:imagedata src="x151_files/image035.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=164 height=41
+src="x151_files/image036.gif" v:shapes="_x0000_i1036"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1036"
+  DrawAspect="Content" ObjectID="_1278082356">
+ </o:OLEObject>
+</xml><![endif]--><a name=MTReference></a><span style='mso-tab-count:1'>                                       </span>(X.15.1.6)</p>
+<p class=MTDisplayEquation>&nbsp;</p>
+<p class=MsoNormal><span class=SpellE>Apare</span> <span class=SpellE>astfel</span>
+<span class=SpellE><span class=GramE>clar&#259;</span></span> <span
+class=SpellE>semnifica&#355;ia</span> VDF, <span class=SpellE>modulul</span> <span
+class=SpellE>componentei</span> <span class=SpellE>normale</span> a VDF <span
+class=SpellE>prin</span> <span class=SpellE>suprafa&#355;a</span> de <span
+class=SpellE>referin&#355;&#259;</span> <span class=SpellE>este</span> <span
+class=SpellE>tocmai</span> <span class=SpellE>densitatea</span> <span
+class=SpellE>superficial&#259;</span> a <span class=SpellE>intensit&#259;&#355;ii</span>
+<span class=SpellE>fluxului</span> <span class=SpellE>m&#259;rimii</span> <span
+class=SpellE>transportate</span> <span class=SpellE>prin</span> <span
+class=SpellE>acea</span> <span class=SpellE>suprafa&#355;&#259;</span>.</p>
+
+<p class=Comentariu><span lang=RO>Comentariul X.15.1.1: Observ&#259;m c&#259;
+VDF are în compunere un atribut cumulativ – densitatea volumic&#259; a
+m&#259;rimii transportate – fapt ce face ca &#351;i VDF s&#259; devin&#259; un
+atribut cumulativ. Astfel mul&#355;imea vectorilor VDF uniform distribui&#355;i
+fie pe suprafa&#355;&#259;, fie pe volum, având o direc&#355;ie comun&#259;,
+poate fi înlocuit&#259; (reprezentat&#259;) de un singur vector – rezultanta –
+ce va avea direc&#355;ia comun&#259; iar modulul egal cu suma (integrala de
+volum sau suprafa&#355;&#259;) a VDF.</span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+<div class="NAVFOOTER">
+            <hr align="left" width="100%" >
+            <table summary="Footer navigation table" border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tbody><tr>
+                  		<td align="center" valign="top" width="33%"><a href="../index.html" accesskey="I"><b>CUPRINS</b></a></td>
+						<td align="right" valign="top" width="33%"><a href="x152.htm" accesskey="N"><img src="../../img/dr.gif" alt="inainte" height="35" width="50"></a></td>
+                                               </tr>
+            </tbody></table>
+            <hr >
+        </div>
+        <div align="center" class="color">
+            <p>Copyright &copy; 2006-2008 Aurel Rusu. All rights reserved.</p>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,962 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="x323_files/filelist.xml">
+<link rel=Edit-Time-Data href="x323_files/editdata.mso">
+<link rel=OLE-Object-Data href="x323_files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Derivata în sens obiectual</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Dany</o:Author>
+  <o:LastAuthor>Dany</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>4</o:TotalTime>
+  <o:Created>2008-07-20T12:01:00Z</o:Created>
+  <o:LastSaved>2008-07-20T12:01:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>1201</o:Words>
+  <o:Characters>6851</o:Characters>
+  <o:Lines>57</o:Lines>
+  <o:Paragraphs>16</o:Paragraphs>
+  <o:CharactersWithSpaces>8036</o:CharactersWithSpaces>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:21.75pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:"Body Text";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-align:justify;
+	text-indent:21.25pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:14.0pt;
+	mso-ansi-language:RO;
+	mso-bidi-font-weight:normal;}
+h2
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	text-align:justify;
+	text-indent:21.75pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-style:italic;}
+h3
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	text-align:justify;
+	text-indent:21.75pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:13.0pt;
+	font-family:Arial;}
+h4
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	text-align:justify;
+	text-indent:21.75pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:14.0pt;
+	font-family:"Times New Roman";}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{mso-style-noshow:yes;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:21.25pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:RO;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{mso-style-noshow:yes;
+	mso-style-next:"Body Text";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	text-align:center;
+	text-indent:21.25pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:RO;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+span.MsoFootnoteReference
+	{mso-style-noshow:yes;
+	mso-style-parent:"";
+	font-family:"Times New Roman";
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	vertical-align:super;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-align:justify;
+	text-indent:21.75pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.25in;
+	text-align:justify;
+	text-indent:21.75pt;
+	line-height:200%;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.25in;
+	text-align:justify;
+	text-indent:21.75pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MTDisplayEquation, li.MTDisplayEquation, div.MTDisplayEquation
+	{mso-style-name:MTDisplayEquation;
+	mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:21.25pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 227.0pt right 454.0pt;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.Comentariu, li.Comentariu, div.Comentariu
+	{mso-style-name:Comentariu;
+	margin-top:0in;
+	margin-right:14.2pt;
+	margin-bottom:0in;
+	margin-left:14.2pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:28.35pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:black;
+	mso-ansi-language:RO;}
+ /* Page Definitions */
+ @page
+	{mso-footnote-separator:url("x323_files/header.htm") fs;
+	mso-footnote-continuation-separator:url("x323_files/header.htm") fcs;
+	mso-endnote-separator:url("x323_files/header.htm") es;
+	mso-endnote-continuation-separator:url("x323_files/header.htm") ecs;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:391782248;
+	mso-list-type:simple;
+	mso-list-template-ids:-615983876;}
+@list l0:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l1
+	{mso-list-id:588463145;
+	mso-list-type:simple;
+	mso-list-template-ids:1546037168;}
+@list l1:level1
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l2
+	{mso-list-id:973676038;
+	mso-list-type:simple;
+	mso-list-template-ids:-1629064344;}
+@list l2:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:0in;
+	mso-level-legacy-space:8.5pt;
+	margin-left:28.35pt;
+	text-indent:0in;}
+@list l3
+	{mso-list-id:1062142575;
+	mso-list-type:simple;
+	mso-list-template-ids:-74029696;}
+@list l3:level1
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l4
+	{mso-list-id:1090463196;
+	mso-list-type:simple;
+	mso-list-template-ids:-387401334;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F02D;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;
+	font-family:Symbol;}
+@list l5
+	{mso-list-id:1201162054;
+	mso-list-type:simple;
+	mso-list-template-ids:708313710;}
+@list l5:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:\F02D;
+	mso-level-tab-stop:60.55pt;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:42.55pt;
+	font-family:Symbol;}
+@list l6
+	{mso-list-id:1298297478;
+	mso-list-type:simple;
+	mso-list-template-ids:-1001342708;}
+@list l6:level1
+	{mso-level-start-at:2;
+	mso-level-number-format:alpha-lower;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l7
+	{mso-list-id:1504860635;
+	mso-list-type:simple;
+	mso-list-template-ids:708313710;}
+@list l7:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:\F02D;
+	mso-level-tab-stop:60.55pt;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:42.55pt;
+	font-family:Symbol;}
+@list l8
+	{mso-list-id:2023819143;
+	mso-list-type:simple;
+	mso-list-template-ids:-615983876;}
+@list l8:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35887416-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+<hr >
+<div align="center">
+          <table width="80%">
+          <tbody>
+                  <tr>
+                    <td>
+                        <a href="http://filosofia.obiectuala.ro"><img border="0" src="../../img/fo3.jpg" height="110" width="890" alt="filozofia obiectuala" ></a>
+                    </td>
+                  </tr>
+           </tbody>
+       </table>
+       </div>
+       <hr >
+<div class=Section1>
+
+<h3><a name="_Toc194477580">X.3.2.3 Derivata în sens obiectual</a></h3>
+
+<p class=MsoNormal style='text-indent:21.3pt'>Esen&#355;a abord&#259;rii
+obiectuale (sistemice) const&#259; în organizarea informa&#355;iei de prelucrat
+în <i style='mso-bidi-font-style:normal'>obiecte</i> &#351;i <i
+style='mso-bidi-font-style:normal'>procese</i> folosind no&#355;iunea de <i
+style='mso-bidi-font-style:normal'>distribu&#355;ie</i>. De asemenea se
+urm&#259;re&#351;te identificarea atributelor de model ale obiectelor dup&#259;
+modelul general de obiect dat în cap. 3, iar dac&#259; exist&#259; procese,
+identificarea obiectelor procesuale. În cazul mul&#355;imilor de obiecte între
+care exist&#259; rela&#355;ii externe (cazul obiectelor compuse), &#351;tim de
+asemenea c&#259; aceste rela&#355;ii exist&#259; <u>între referin&#355;ele
+interne</u> ale obiectelor, referin&#355;ele interne fiind substitute ale
+obiectelor în aceste rela&#355;ii,<span style='mso-spacerun:yes'> 
+</span>deoarece rela&#355;ii cantitative pot exist&#259; doar între valori
+singulare.</p>
+
+<p class=MsoNormal>Conform celor stabilite în cap. 2, rela&#355;ia <i
+style='mso-bidi-font-style:normal'>y=f(x)</i> men&#355;ionat&#259; la începutul
+par. X.3.2.2 constiuie <i style='mso-bidi-font-style:normal'>distribu&#355;ia</i>
+atributului <i style='mso-bidi-font-style:normal'>y</i> pe atributul suport <i
+style='mso-bidi-font-style:normal'>x</i>, în varianta în care rela&#355;ia de
+atribuire este <u>invariant&#259;</u> (o func&#355;ie) pe întreg domeniul
+suport (domeniul de continuitate al func&#355;iei). Tot în cap. 2 am v&#259;zut
+c&#259; pentru o valoare singular&#259; considerat&#259; invariant&#259; <i
+style='mso-bidi-font-style:normal'>x<sub>k</sub></i>, &#351;i valoarea
+atributului distribuit <i style='mso-bidi-font-style:normal'>y<sub>k</sub></i>
+este invariant&#259;, a&#351;a c&#259; valorile <i style='mso-bidi-font-style:
+normal'>y<sub>k</sub></i> distribuite pe valorile <i style='mso-bidi-font-style:
+normal'>x<sub>k</sub></i> le recunoa&#351;tem u&#351;or ca fiind obiecte
+abstracte din clasa <i style='mso-bidi-font-style:normal'>S<sub>0</sub></i>. Un
+cuplu <span style='position:relative;top:6.0pt;mso-text-raise:-6.0pt'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1030" type="#_x0000_t75" style='width:39pt;
+ height:18pt' o:ole="" fillcolor="window">
+ <v:imagedata src="x323_files/image001.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=52 height=24
+src="x323_files/image002.gif" v:shapes="_x0000_i1030"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1030"
+  DrawAspect="Content" ObjectID="_1278071652">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>c&#259;ruia îi
+corespunde pe graficul din fig. X.3.2.3.1 punctul <i style='mso-bidi-font-style:
+normal'>P<sub>k</sub></i> cu vectorul de pozi&#355;ie <b style='mso-bidi-font-weight:
+normal'><i style='mso-bidi-font-style:normal'>r</i></b><i style='mso-bidi-font-style:
+normal'><sub>k</sub></i>, este un element al mul&#355;imii rela&#355;iilor de
+atribuire ce formeaz&#259; distribu&#355;ia (adic&#259; un element al
+distribu&#355;iei primare).</p>
+
+<p class=MsoNormal>Dac&#259; avem dou&#259; varia&#355;ii simetrice ale
+atributului suport de la valoarea <span style='position:relative;top:6.0pt;
+mso-text-raise:-6.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1031" type="#_x0000_t75"
+ style='width:68.25pt;height:18pt' o:ole="" fillcolor="window">
+ <v:imagedata src="x323_files/image003.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=91 height=24
+src="x323_files/image004.gif" v:shapes="_x0000_i1031"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1031"
+  DrawAspect="Content" ObjectID="_1278071653">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>pân&#259; la <span
+style='position:relative;top:6.0pt;mso-text-raise:-6.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1032" type="#_x0000_t75" style='width:68.25pt;height:18pt' o:ole=""
+ fillcolor="window">
+ <v:imagedata src="x323_files/image005.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=91 height=24
+src="x323_files/image006.gif" v:shapes="_x0000_i1032"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1032"
+  DrawAspect="Content" ObjectID="_1278071654">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>fa&#355;&#259; de
+valoarea singular&#259; <i style='mso-bidi-font-style:normal'>x<sub>k</sub></i>
+(la valorile c&#259;rora vom avea punctele<span style='position:relative;
+top:6.0pt;mso-text-raise:-6.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1033"
+ type="#_x0000_t75" style='width:20.25pt;height:18pt' o:ole="" fillcolor="window">
+ <v:imagedata src="x323_files/image007.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=27 height=24
+src="x323_files/image008.gif" v:shapes="_x0000_i1033"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1033"
+  DrawAspect="Content" ObjectID="_1278071655">
+ </o:OLEObject>
+</xml><![endif]-->, respectiv <span style='position:relative;top:6.0pt;
+mso-text-raise:-6.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1034" type="#_x0000_t75"
+ style='width:20.25pt;height:18pt' o:ole="" fillcolor="window">
+ <v:imagedata src="x323_files/image009.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=27 height=24
+src="x323_files/image010.gif" v:shapes="_x0000_i1034"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1034"
+  DrawAspect="Content" ObjectID="_1278071656">
+ </o:OLEObject>
+</xml><![endif]-->), suficient de mici încât distribu&#355;iile pe ele s&#259;
+poat&#259; fi considerate liniare, acestora le vor corespunde varia&#355;iile
+de atribut:</p>
+
+<p class=MTDisplayEquation><span style='mso-tab-count:1'>                                     </span><span
+style='position:relative;top:6.0pt;mso-text-raise:-6.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1035" type="#_x0000_t75" style='width:192pt;height:18.75pt' o:ole=""
+ fillcolor="window">
+ <v:imagedata src="x323_files/image011.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=256 height=25
+src="x323_files/image012.gif" v:shapes="_x0000_i1035"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1035"
+  DrawAspect="Content" ObjectID="_1278071657">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span><span
+style='mso-tab-count:1'>                         </span>(X.3.2.3.1)</p>
+
+<p class=MsoNormal style='text-indent:0in'>&#351;i:</p>
+
+<p class=MTDisplayEquation><span style='mso-tab-count:1'>                                     </span><span
+style='position:relative;top:6.0pt;mso-text-raise:-6.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1036" type="#_x0000_t75" style='width:192pt;height:18.75pt' o:ole=""
+ fillcolor="window">
+ <v:imagedata src="x323_files/image013.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=256 height=25
+src="x323_files/image014.gif" v:shapes="_x0000_i1036"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1036"
+  DrawAspect="Content" ObjectID="_1278071658">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span><span
+style='mso-tab-count:1'>                         </span>(X.3.2.3.2)</p>
+<p class=MTDisplayEquation>&nbsp;</p>
+<p class=MsoNormal align=center style='text-align:center'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1037" type="#_x0000_t75" style='width:280.5pt;height:211.5pt'
+ o:ole="" fillcolor="window">
+ <v:imagedata src="x323_files/image015.wmz" o:title="" gain="234057f"
+  blacklevel="-3932f" grayscale="t" bilevel="t"/>
+</v:shape><![endif]--><![if !vml]><img width=374 height=282
+src="x323_files/image016.gif" v:shapes="_x0000_i1037"><![endif]><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Word.Picture.8" ShapeID="_x0000_i1037"
+  DrawAspect="Content" ObjectID="_1278071659">
+ </o:OLEObject>
+</xml><![endif]--></p>
+
+<p class=MsoNormal align=center style='text-align:center'><i style='mso-bidi-font-style:
+normal'>Fig. X.3.2.3.1</i></p>
+
+<p class=MsoNormal>Conform celor convenite în cap. 2, 3 &#351;i 4,
+rela&#355;ia:</p>
+
+<p class=MTDisplayEquation><span style='mso-tab-count:1'>                                </span><span
+style='position:relative;top:15.0pt;mso-text-raise:-15.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1050" type="#_x0000_t75" style='width:222pt;height:36pt' o:ole=""
+ fillcolor="window">
+ <v:imagedata src="x323_files/image017.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=296 height=48
+src="x323_files/image018.gif" v:shapes="_x0000_i1050"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1050"
+  DrawAspect="Content" ObjectID="_1278071660">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-tab-count:1'>                    </span><span
+style='mso-spacerun:yes'> </span>(X.3.2.3.3)</p>
+<p class=MTDisplayEquation>&nbsp;</p>
+<p class=MsoNormal style='text-indent:0in'>identic&#259; cu rela&#355;ia
+X.3.2.2.3, înseamn&#259; <i style='mso-bidi-font-style:normal'>densitatea</i>
+uniform&#259; a unei distribu&#355;ii liniare a varia&#355;iei de atribut <span
+style='position:relative;top:6.0pt;mso-text-raise:-6.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1051" type="#_x0000_t75" style='width:29.25pt;height:18.75pt'
+ o:ole="">
+ <v:imagedata src="x323_files/image019.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=39 height=25
+src="x323_files/image020.gif" v:shapes="_x0000_i1051"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1051"
+  DrawAspect="Content" ObjectID="_1278071661">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>pe un interval suport <span
+style='position:relative;top:6.0pt;mso-text-raise:-6.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1052" type="#_x0000_t75" style='width:27.75pt;height:18.75pt'
+ o:ole="">
+ <v:imagedata src="x323_files/image021.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=37 height=25
+src="x323_files/image022.gif" v:shapes="_x0000_i1052"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1052"
+  DrawAspect="Content" ObjectID="_1278071662">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>(adic&#259; densitatea
+unui PES de tip P<sub>1</sub>) evaluat&#259; la stânga referin&#355;ei <i
+style='mso-bidi-font-style:normal'>x<sub>k</sub></i>. Am v&#259;zut în cap. 4
+c&#259; densitatea unui PES fiind invariant&#259; pe domeniul s&#259;u suport,
+constituie un obiect, în cazul de mai sus un obiect din clasa <i
+style='mso-bidi-font-style:normal'>S<sub>1</sub></i>. Acest PES are ca suport
+intervalul <span style='position:relative;top:6.0pt;mso-text-raise:-6.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1053" type="#_x0000_t75" style='width:78.75pt;height:18.75pt'
+ o:ole="" fillcolor="window">
+ <v:imagedata src="x323_files/image023.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=105 height=25
+src="x323_files/image024.gif" v:shapes="_x0000_i1053"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1053"
+  DrawAspect="Content" ObjectID="_1278071663">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>de m&#259;rime <span
+style='position:relative;top:3.0pt;mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1054" type="#_x0000_t75" style='width:17.25pt;height:14.25pt'
+ o:ole="">
+ <v:imagedata src="x323_files/image025.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=23 height=19
+src="x323_files/image026.gif" v:shapes="_x0000_i1054"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1054"
+  DrawAspect="Content" ObjectID="_1278071664">
+ </o:OLEObject>
+</xml><![endif]-->, <u>cu referin&#355;a intern&#259;</u> la <i
+style='mso-bidi-font-style:normal'>x<sub>k</sub></i> (referin&#355;&#259;
+dreapta, adic&#259; intervalul suport se afl&#259; la stânga acestei valori).
+Aceea&#351;i valoare <i style='mso-bidi-font-style:normal'>x<sub>k</sub></i>
+poate fi îns&#259; referin&#355;&#259; intern&#259; &#351;i pentru intervalul
+suport de aceea&#351;i m&#259;rime, dar aflat la dreapta referin&#355;ei <i
+style='mso-bidi-font-style:normal'>x<sub>k</sub></i>, <span style='position:
+relative;top:6.0pt;mso-text-raise:-6.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1055"
+ type="#_x0000_t75" style='width:78.75pt;height:18.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="x323_files/image027.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=105 height=25
+src="x323_files/image028.gif" v:shapes="_x0000_i1055"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1055"
+  DrawAspect="Content" ObjectID="_1278071665">
+ </o:OLEObject>
+</xml><![endif]-->, interval suport al unui alt PES cu densitatea:</p>
+
+<p class=MTDisplayEquation><span style='mso-tab-count:1'>                                </span><span
+style='position:relative;top:15.0pt;mso-text-raise:-15.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1056" type="#_x0000_t75" style='width:222.75pt;height:36pt' o:ole=""
+ fillcolor="window">
+ <v:imagedata src="x323_files/image029.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=297 height=48
+src="x323_files/image030.gif" v:shapes="_x0000_i1056"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1056"
+  DrawAspect="Content" ObjectID="_1278071666">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-tab-count:1'>                    </span><span
+style='mso-spacerun:yes'> </span>(X.3.2.3.4)</p>
+<p class=MTDisplayEquation>&nbsp;</p>
+<p class=MsoNormal style='text-indent:21.3pt'>Observ&#259;m c&#259; în
+abordarea obiectual&#259; prin distribu&#355;ii, valoarea <i style='mso-bidi-font-style:
+normal'>x<sub>k</sub></i> (aceea&#351;i cu cea din abordarea clasic&#259; de
+mai înainte) devine o referin&#355;&#259; intern&#259; pentru dou&#259; obiecte
+de tip interval (stânga &#351;i dreapta), intervale ce constituie suportul a
+dou&#259; varia&#355;ii uniforme de m&#259;rime <span style='position:relative;
+top:6.0pt;mso-text-raise:-6.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1025"
+ type="#_x0000_t75" style='width:29.25pt;height:18.75pt' o:ole="">
+ <v:imagedata src="x323_files/image019.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=39 height=25
+src="x323_files/image020.gif" v:shapes="_x0000_i1025"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1025"
+  DrawAspect="Content" ObjectID="_1278071667">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>&#351;i <span
+style='position:relative;top:6.0pt;mso-text-raise:-6.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1026" type="#_x0000_t75" style='width:29.25pt;height:18.75pt'
+ o:ole="">
+ <v:imagedata src="x323_files/image031.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=39 height=25
+src="x323_files/image032.gif" v:shapes="_x0000_i1026"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1026"
+  DrawAspect="Content" ObjectID="_1278071668">
+ </o:OLEObject>
+</xml><![endif]-->,<span style='mso-spacerun:yes'>  </span>a&#351;adar <i
+style='mso-bidi-font-style:normal'>x<sub>k</sub></i> va fi referin&#355;&#259;
+intern&#259; &#351;i pentru aceste procese, &#351;i pentru
+densit&#259;&#355;ile acestora (distribuite uniform pe cele dou&#259; intervale
+suport cu referin&#355;a <i style='mso-bidi-font-style:normal'>x<sub>k</sub></i>).</p>
+
+<p class=Comentariu><span lang=RO>Comentariul X.3.2.3.1: Faptul c&#259;
+dou&#259; obiecte abstracte au aceea&#351;i referin&#355;&#259; intern&#259; nu
+înseamn&#259; întotdeauna c&#259; cele dou&#259; obiecte sunt unul &#351;i
+acela&#351;i. Obiectul abstract stare <i style='mso-bidi-font-style:normal'>S<sub>0</sub></i>
+cu referin&#355;a <i style='mso-bidi-font-style:normal'>x<sub>k</sub></i> este
+distribuit pe intervalul de nedeterminare al PD respectiv, în timp ce obiectul
+abstract <i style='mso-bidi-font-style:normal'>S<sub>1</sub></i> cu
+referin&#355;a la <i style='mso-bidi-font-style:normal'>x<sub>k</sub></i> este
+distribuit pe un interval finit ce cuprinde mai multe valori singulare
+cunoscute (pentru a putea exista un proces nenul). În ambele cazuri <i
+style='mso-bidi-font-style:normal'>x<sub>k</sub></i> este acela&#351;i, dar
+m&#259;rimea domeniilor interne pe care le refer&#259; sunt diferite. Dac&#259;
+a&#355;i citit cap. 3 &#351;i 4 în care erau specificate elementele componente
+ale unui obiect &#351;i ale unui proces, reiese clar c&#259; obiectele din
+clasa <i style='mso-bidi-font-style:normal'>S<sub>0</sub></i> &#351;i cele din
+clasa <i style='mso-bidi-font-style:normal'>S<sub>1</sub></i> nu pot fi
+confundate chiar dac&#259; au aceea&#351;i referin&#355;&#259; intern&#259;. În
+cap. 4 s-a f&#259;cut clar precizarea c&#259; obiectele <i style='mso-bidi-font-style:
+normal'>S<sub>0</sub></i> sunt st&#259;ri ale unor obiecte (cu procese nule)
+iar obiectele <i style='mso-bidi-font-style:normal'>S<sub>1</sub></i> sunt
+st&#259;ri ale unor procese uniforme<i style='mso-bidi-font-style:normal'> P<sub>1</sub></i>).</span></p>
+
+<p class=MsoNormal>Densitatea varia&#355;iei totale (considerat&#259; &#351;i
+ea uniform&#259;) pe intervalul suport <span style='position:relative;
+top:3.0pt;mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1027"
+ type="#_x0000_t75" style='width:23.25pt;height:14.25pt' o:ole="">
+ <v:imagedata src="x323_files/image033.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=31 height=19
+src="x323_files/image034.gif" v:shapes="_x0000_i1027"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1027"
+  DrawAspect="Content" ObjectID="_1278071670">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>(adunând &#351;i
+sc&#259;zând la num&#259;r&#259;tor pe <i style='mso-bidi-font-style:normal'>f(x<sub>k</sub>)</i>)
+rezult&#259; a fi:</p>
+
+<p class=MTDisplayEquation style='text-indent:0in;tab-stops:center 212.65pt right 454.0pt'><span
+style='mso-tab-count:1'>             </span><span style='position:relative;
+top:14.0pt;mso-text-raise:-14.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1028"
+ type="#_x0000_t75" style='width:350.25pt;height:33.75pt' o:ole="" fillcolor="window">
+ <v:imagedata src="x323_files/image035.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=467 height=45
+src="x323_files/image036.gif" v:shapes="_x0000_i1028"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1028"
+  DrawAspect="Content" ObjectID="_1278071671">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-tab-count:1'>     </span>(X.3.2.3.5)</p>
+<p class=MTDisplayEquation style='text-indent:0in;tab-stops:center 212.65pt right 454.0pt'>&nbsp;</p>
+<p class=MsoNormal style='text-indent:0in'>de unde se obsev&#259; c&#259;
+aceast&#259; densitate este egal&#259; cu valoarea medie a celor dou&#259;
+densit&#259;&#355;i stânga-dreapta cu referin&#355;a la <i style='mso-bidi-font-style:
+normal'>x<sub>k</sub></i>. Fa&#355;&#259; de aceast&#259; densitate medie (care
+este egal&#259; cu densitatea tangentei în <i style='mso-bidi-font-style:normal'>P<sub>k</sub></i>),
+considerat&#259; <i style='mso-bidi-font-style:normal'>component&#259;
+comun&#259;</i> a celor dou&#259; densit&#259;&#355;i (referin&#355;&#259;
+intern&#259; de clas&#259;), vom avea cele dou&#259; componente specifice ale
+densit&#259;&#355;ilor (date de func&#355;ia D() introdus&#259; în cap. 3):</p>
+
+<p class=MTDisplayEquation><span style='mso-tab-count:1'>                                </span><span
+style='position:relative;top:12.0pt;mso-text-raise:-12.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1029" type="#_x0000_t75" style='width:222.75pt;height:33pt' o:ole=""
+ fillcolor="window">
+ <v:imagedata src="x323_files/image037.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=297 height=44
+src="x323_files/image038.gif" v:shapes="_x0000_i1029"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1029"
+  DrawAspect="Content" ObjectID="_1278071672">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-tab-count:1'>                    </span><span
+style='mso-spacerun:yes'> </span>(X.3.2.3.6)</p>
+<p class=MTDisplayEquation>&nbsp;</p>
+<p class=MsoNormal style='text-indent:0in'>componenta specific&#259; a
+densit&#259;&#355;ii la stânga referin&#355;ei <i style='mso-bidi-font-style:
+normal'>x<sub>k</sub></i> &#351;i:</p>
+
+<p class=MTDisplayEquation><span style='mso-tab-count:1'>                                </span><span
+style='position:relative;top:12.0pt;mso-text-raise:-12.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1048" type="#_x0000_t75" style='width:224.25pt;height:33pt' o:ole=""
+ fillcolor="window">
+ <v:imagedata src="x323_files/image039.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=299 height=44
+src="x323_files/image040.gif" v:shapes="_x0000_i1048"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1048"
+  DrawAspect="Content" ObjectID="_1278071673">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span><span
+style='mso-tab-count:1'>                    </span>(X.3.2.3.7)</p>
+<p class=MTDisplayEquation>&nbsp;</p>
+<p class=MsoNormal style='text-indent:0in'>componenta specific&#259; a
+densit&#259;&#355;ii la dreapta aceleia&#351;i referin&#355;e. Am v&#259;zut în
+cap. 4 când am discutat despre dou&#259; PES concatenate (cum sunt &#351;i
+varia&#355;iile noastre) c&#259; pentru o rela&#355;ie de dependen&#355;&#259;
+neliniar&#259; a&#351;a cum este <i style='mso-bidi-font-style:normal'>f(x)</i>
+cele dou&#259; componente specifice ale PES trebuie s&#259; existe (s&#259; fie
+diferite de zero), altfel rela&#355;ia <i style='mso-bidi-font-style:normal'>f(x)</i>
+este o dreapt&#259; (cazul tangentei).</p>
+
+<p class=MsoBodyTextIndent2>În urma acestei analize obiectuale a obiectelor
+&#351;i proceselor implicate în definirea no&#355;iunii de derivat&#259; de
+ordinul I, putem face urm&#259;toarele observa&#355;ii:</p>
+
+<p class=MsoNormal style='margin-left:0in;text-indent:42.55pt;mso-list:l8 level1 lfo9;
+tab-stops:63.8pt'><![if !supportLists]><span style='mso-list:Ignore'>1)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Obiectul abstract “<i style='mso-bidi-font-style:normal'>valoare
+singular&#259; a unei variabile dependente</i> <i style='mso-bidi-font-style:
+normal'>y<sub>k</sub></i> <i style='mso-bidi-font-style:normal'>atribuit&#259;
+printr-o rela&#355;ie f unei valori singulare independente invariante x<sub>k</sub></i>”,
+constituie un obiect din clasa procesual&#259; <i style='mso-bidi-font-style:
+normal'>S<sub>0</sub></i> (clas&#259; specific&#259; obiectelor cu procese
+nule).</p>
+
+<p class=MsoNormal style='margin-left:0in;text-indent:42.55pt;mso-list:l8 level1 lfo9;
+tab-stops:63.8pt'><![if !supportLists]><span style='mso-list:Ignore'>2)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Obiectul abstract “<i style='mso-bidi-font-style:normal'>varia&#355;ie
+finit&#259; de ordinul I <span style='position:relative;top:6.0pt;mso-text-raise:
+-6.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1049" type="#_x0000_t75"
+ style='width:20.25pt;height:18pt' o:ole="">
+ <v:imagedata src="x323_files/image041.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=27 height=24
+src="x323_files/image042.gif" v:shapes="_x0000_i1049"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1049"
+  DrawAspect="Content" ObjectID="_1278071674">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>a atributului y
+distribuit&#259; uniform pe o varia&#355;ie finit&#259; suport de acela&#351;i
+ordin <span style='position:relative;top:6.0pt;mso-text-raise:-6.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1038" type="#_x0000_t75" style='width:20.25pt;height:18pt' o:ole="">
+ <v:imagedata src="x323_files/image043.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=27 height=24
+src="x323_files/image044.gif" v:shapes="_x0000_i1038"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1038"
+  DrawAspect="Content" ObjectID="_1278071675">
+ </o:OLEObject>
+</xml><![endif]--></i>” (unde <i style='mso-bidi-font-style:normal'>x<sub>k</sub></i>
+este referin&#355;a intern&#259; a intervalului suport),<sub> </sub>constituie
+un PES din clasa <i style='mso-bidi-font-style:normal'>P<sub>1</sub></i> (o
+diferen&#355;&#259; finit&#259; între dou&#259; st&#259;ri <i style='mso-bidi-font-style:
+normal'>S<sub>0</sub></i>); densitatea uniform&#259; a acestui PES este o stare
+de proces din clasa <i style='mso-bidi-font-style:normal'>S<sub>1</sub></i>.</p>
+
+<p class=MsoNormal style='margin-left:0in;text-indent:42.55pt;mso-list:l8 level1 lfo9;
+tab-stops:63.8pt'><![if !supportLists]><span style='mso-list:Ignore'>3)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]>Dou&#259; varia&#355;ii <i style='mso-bidi-font-style:
+normal'><span style='position:relative;top:6.0pt;mso-text-raise:-6.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1039" type="#_x0000_t75" style='width:20.25pt;height:18pt' o:ole="">
+ <v:imagedata src="x323_files/image041.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=27 height=24
+src="x323_files/image042.gif" v:shapes="_x0000_i1039"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1039"
+  DrawAspect="Content" ObjectID="_1278071676">
+ </o:OLEObject>
+</xml><![endif]--></i>, cu intervale suport egale ca m&#259;rime <span
+style='position:relative;top:3.0pt;mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1040" type="#_x0000_t75" style='width:17.25pt;height:14.25pt'
+ o:ole="">
+ <v:imagedata src="x323_files/image045.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=23 height=19
+src="x323_files/image026.gif" v:shapes="_x0000_i1040"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1040"
+  DrawAspect="Content" ObjectID="_1278071677">
+ </o:OLEObject>
+</xml><![endif]-->, simetrice fa&#355;&#259; de o referin&#355;&#259;
+comun&#259; <i style='mso-bidi-font-style:normal'>x<sub>k</sub></i> vor
+constitui dou&#259; PES concatenate, la care starea final&#259; a primului este
+stare ini&#355;ial&#259; a celui de-al doilea, aceast&#259; stare comun&#259;
+(de tip <i style='mso-bidi-font-style:normal'>S<sub>0</sub></i>) fiind în cazul
+din fig. X.3.2.3.1 punctul <span style='position:relative;top:6.0pt;mso-text-raise:
+-6.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1041" type="#_x0000_t75"
+ style='width:50.25pt;height:18pt' o:ole="" fillcolor="window">
+ <v:imagedata src="x323_files/image046.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=67 height=24
+src="x323_files/image047.gif" v:shapes="_x0000_i1041"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1041"
+  DrawAspect="Content" ObjectID="_1278071678">
+ </o:OLEObject>
+</xml><![endif]-->. Aceste PES, fiecare în parte, pot avea domenii suport
+oricât de mici dar cu condi&#355;ia ca suportul s&#259; con&#355;in&#259; mai
+mult de o valoare singular&#259; cunoscut&#259; (pentru a putea exista o
+varia&#355;ie liniar&#259; <i style='mso-bidi-font-style:normal'><span
+style='position:relative;top:6.0pt;mso-text-raise:-6.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1042" type="#_x0000_t75" style='width:20.25pt;height:18pt' o:ole="">
+ <v:imagedata src="x323_files/image041.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=27 height=24
+src="x323_files/image042.gif" v:shapes="_x0000_i1042"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1042"
+  DrawAspect="Content" ObjectID="_1278071679">
+ </o:OLEObject>
+</xml><![endif]--></i>), a&#351;a c&#259; ele nu pot converge niciodat&#259;
+spre un punct, fie el &#351;i punct dimensional. </p>
+
+<p class=MsoNormal style='text-indent:21.3pt'>Cu acest din urm&#259;
+amendament, putem p&#259;stra nota&#355;ia pentru intervalele infinitesimale
+din calculul diferen&#355;ial, varia&#355;iile <span style='position:relative;
+top:5.0pt;mso-text-raise:-5.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1043"
+ type="#_x0000_t75" style='width:17.25pt;height:15.75pt' o:ole="">
+ <v:imagedata src="x323_files/image048.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=23 height=21
+src="x323_files/image049.gif" v:shapes="_x0000_i1043"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1043"
+  DrawAspect="Content" ObjectID="_1278071680">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>&#351;i <span
+style='position:relative;top:3.0pt;mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1044" type="#_x0000_t75" style='width:17.25pt;height:14.25pt'
+ o:ole="">
+ <v:imagedata src="x323_files/image050.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=23 height=19
+src="x323_files/image026.gif" v:shapes="_x0000_i1044"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1044"
+  DrawAspect="Content" ObjectID="_1278071681">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>devenind <i
+style='mso-bidi-font-style:normal'>dy</i> &#351;i <i style='mso-bidi-font-style:
+normal'>dx</i>, care vor putea avea ca referin&#355;&#259; intern&#259; o
+valoare singular&#259;, dar <u>nu vor putea niciodat&#259; s&#259; fie
+înlocuite de o valoare singular&#259;</u> (un singur punct). În aceste
+condi&#355;ii, rela&#355;iile X.3.2.2.3 &#351;i X.3.2.2.4 r&#259;mân în
+continuare valabile &#351;i în matematica bazat&#259; pe distribu&#355;ii, dar
+derivata de ordinul I nu mai este limita (asimptota) spre care tinde raportul
+varia&#355;iilor, ci <i style='mso-bidi-font-style:normal'>densitatea</i> unui
+PES de ordinul I. O alt&#259; precizare important&#259;, domeniul <i
+style='mso-bidi-font-style:normal'>dx</i> în cazul proceselor realizabile (al
+calculelor numerice) nu poate fi mai mic decât <span style='position:relative;
+top:3.0pt;mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1045"
+ type="#_x0000_t75" style='width:9.75pt;height:11.25pt' o:ole="">
+ <v:imagedata src="x323_files/image051.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=13 height=15
+src="x323_files/image052.gif" v:shapes="_x0000_i1045"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1045"
+  DrawAspect="Content" ObjectID="_1278071682">
+ </o:OLEObject>
+</xml><![endif]-->, intervalul de eroare cu care pot fi reprezentate valorile
+numerice concrete pe SPI efector. În cazul PES concatenate la care intervalul
+suport <span style='position:relative;top:3.0pt;mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1046" type="#_x0000_t75" style='width:17.25pt;height:14.25pt'
+ o:ole="">
+ <v:imagedata src="x323_files/image050.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=23 height=19
+src="x323_files/image026.gif" v:shapes="_x0000_i1046"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1046"
+  DrawAspect="Content" ObjectID="_1278071683">
+ </o:OLEObject>
+</xml><![endif]--><span style='mso-spacerun:yes'> </span>nu poate fi neglijat
+(neglijare impus&#259; de actualele formule de ob&#355;inere a derivatelor
+func&#355;iilor, valabile pentru <span style='position:relative;top:3.0pt;
+mso-text-raise:-3.0pt'><!--[if gte vml 1]><v:shape id="_x0000_i1047" type="#_x0000_t75"
+ style='width:39pt;height:14.25pt' o:ole="" fillcolor="window">
+ <v:imagedata src="x323_files/image053.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=52 height=19
+src="x323_files/image054.gif" v:shapes="_x0000_i1047"><![endif]></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.DSMT4" ShapeID="_x0000_i1047"
+  DrawAspect="Content" ObjectID="_1278071684">
+ </o:OLEObject>
+</xml><![endif]-->), pentru calculul densit&#259;&#355;ilor distribu&#355;iilor
+nu se poate folosi decât calculul cu diferen&#355;e finite. </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+<div class="NAVFOOTER">
+            <hr align="left" width="100%" >
+            <table summary="Footer navigation table" border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tbody><tr>
+				<td align="left" valign="top" width="33%"><a href="x3221.htm" accesskey="P"><img src="../../img/st.gif" alt="inapoi" height="35" width="50" ></a></td>
+                  		<td align="center" valign="top" width="33%"><a href="../index.html" accesskey="I"><b>CUPRINS</b></a></td>
+						<td align="right" valign="top" width="33%"><a href="x324.htm" accesskey="N"><img src="../../img/dr.gif" alt="inainte" height="35" width="50"></a></td>
+                                               </tr>
+            </tbody></table>
+            <hr >
+        </div>
+        <div align="center" class="color">
+            <p>Copyright &copy; 2006-2008 Aurel Rusu. All rights reserved.</p>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,1173 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="86_files/filelist.xml">
+<title>Modelul general de SPI</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Dany</o:Author>
+  <o:LastAuthor>Dany</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>18</o:TotalTime>
+  <o:Created>2008-07-20T10:03:00Z</o:Created>
+  <o:LastSaved>2008-07-20T10:03:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>710</o:Words>
+  <o:Characters>4052</o:Characters>
+  <o:Lines>33</o:Lines>
+  <o:Paragraphs>9</o:Paragraphs>
+  <o:CharactersWithSpaces>4753</o:CharactersWithSpaces>
+  <o:Version>11.5606</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:21.75pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-next:"Body Text";
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-align:justify;
+	text-indent:21.25pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:14.0pt;
+	mso-ansi-language:RO;
+	mso-bidi-font-weight:normal;}
+h2
+	{mso-style-next:"Body Text";
+	margin-top:8.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-align:justify;
+	text-indent:21.25pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-font-kerning:14.0pt;
+	mso-ansi-language:RO;
+	mso-bidi-font-weight:normal;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+h3
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	text-align:justify;
+	text-indent:21.75pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:13.0pt;
+	font-family:Arial;}
+h4
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	text-align:justify;
+	text-indent:21.75pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:14.0pt;
+	font-family:"Times New Roman";}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:28.35pt;
+	mso-pagination:widow-orphan;
+	tab-stops:right dotted 456.4pt;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-no-proof:yes;}
+p.MsoFootnoteText, li.MsoFootnoteText, div.MsoFootnoteText
+	{mso-style-noshow:yes;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:21.25pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:RO;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:21.25pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 207.65pt right 415.3pt;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:21.25pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 207.65pt right 415.3pt;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;}
+p.MsoCaption, li.MsoCaption, div.MsoCaption
+	{mso-style-noshow:yes;
+	mso-style-next:"Body Text";
+	margin-top:6.0pt;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	text-align:center;
+	text-indent:21.25pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:RO;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+span.MsoFootnoteReference
+	{mso-style-noshow:yes;
+	mso-style-parent:"";
+	font-family:"Times New Roman";
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	vertical-align:super;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	text-align:justify;
+	text-indent:21.75pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoBodyTextIndent2, li.MsoBodyTextIndent2, div.MsoBodyTextIndent2
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.25in;
+	text-align:justify;
+	text-indent:21.75pt;
+	line-height:200%;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoBodyTextIndent3, li.MsoBodyTextIndent3, div.MsoBodyTextIndent3
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:.25in;
+	text-align:justify;
+	text-indent:21.75pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.Definiie, li.Definiie, div.Definiie
+	{mso-style-name:Defini\0163ie;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:21.25pt;
+	mso-pagination:widow-orphan;
+	background:#F2F2F2;
+	mso-shading:windowtext;
+	mso-pattern:gray-5 auto;
+	border:none;
+	mso-border-alt:solid windowtext .75pt;
+	padding:0in;
+	mso-padding-alt:1.0pt 4.0pt 1.0pt 4.0pt;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:RO;}
+p.MTDisplayEquation, li.MTDisplayEquation, div.MTDisplayEquation
+	{mso-style-name:MTDisplayEquation;
+	mso-style-next:Normal;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:21.25pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 227.0pt right 454.0pt;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.Comentariu, li.Comentariu, div.Comentariu
+	{mso-style-name:Comentariu;
+	margin-top:0in;
+	margin-right:14.2pt;
+	margin-bottom:0in;
+	margin-left:14.2pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:28.35pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	color:black;
+	mso-ansi-language:RO;}
+p.Style1, li.Style1, div.Style1
+	{mso-style-name:Style1;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:21.25pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:RO;}
+p.Principiu, li.Principiu, div.Principiu
+	{mso-style-name:Principiu;
+	margin:0in;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-indent:21.3pt;
+	mso-pagination:widow-orphan;
+	background:#F2F2F2;
+	mso-shading:windowtext;
+	mso-pattern:gray-5 auto;
+	border:none;
+	mso-border-alt:double windowtext 4.5pt;
+	padding:0in;
+	mso-padding-alt:1.0pt 1.0pt 1.0pt 1.0pt;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	mso-ansi-language:RO;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+ /* Page Definitions */
+ @page
+	{mso-footnote-separator:url("86_files/header.htm") fs;
+	mso-footnote-continuation-separator:url("86_files/header.htm") fcs;
+	mso-endnote-separator:url("86_files/header.htm") es;
+	mso-endnote-continuation-separator:url("86_files/header.htm") ecs;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:-2;
+	mso-list-type:simple;
+	mso-list-template-ids:-1;}
+@list l0:level1
+	{mso-level-start-at:0;
+	mso-level-text:*;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l1
+	{mso-list-id:115568459;
+	mso-list-type:simple;
+	mso-list-template-ids:330579592;}
+@list l1:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:0in;
+	mso-level-legacy-space:5.65pt;
+	margin-left:42.55pt;
+	text-indent:0in;}
+@list l2
+	{mso-list-id:136536444;
+	mso-list-type:simple;
+	mso-list-template-ids:-1089985860;}
+@list l2:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l3
+	{mso-list-id:229275429;
+	mso-list-type:simple;
+	mso-list-template-ids:-1839583678;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F02D;
+	mso-level-tab-stop:60.55pt;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:42.55pt;
+	font-family:Symbol;}
+@list l4
+	{mso-list-id:258216885;
+	mso-list-type:simple;
+	mso-list-template-ids:201916431;}
+@list l4:level1
+	{mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l5
+	{mso-list-id:306397391;
+	mso-list-type:simple;
+	mso-list-template-ids:-1385385466;}
+@list l5:level1
+	{mso-level-start-at:10;
+	mso-level-tab-stop:60.55pt;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:42.55pt;
+	mso-ansi-font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l6
+	{mso-list-id:319238151;
+	mso-list-type:simple;
+	mso-list-template-ids:1775536104;}
+@list l6:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l7
+	{mso-list-id:328483602;
+	mso-list-type:simple;
+	mso-list-template-ids:-1839583678;}
+@list l7:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F02D;
+	mso-level-tab-stop:60.55pt;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:42.55pt;
+	font-family:Symbol;}
+@list l8
+	{mso-list-id:338390847;
+	mso-list-type:simple;
+	mso-list-template-ids:514988752;}
+@list l8:level1
+	{mso-level-number-format:roman-upper;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:0in;
+	mso-level-legacy-space:5.65pt;
+	margin-left:28.35pt;
+	text-indent:0in;}
+@list l9
+	{mso-list-id:377710492;
+	mso-list-type:simple;
+	mso-list-template-ids:-1839583678;}
+@list l9:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F02D;
+	mso-level-tab-stop:60.55pt;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:42.55pt;
+	font-family:Symbol;}
+@list l10
+	{mso-list-id:494418358;
+	mso-list-type:simple;
+	mso-list-template-ids:330579592;}
+@list l10:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:0in;
+	mso-level-legacy-space:5.65pt;
+	margin-left:42.55pt;
+	text-indent:0in;}
+@list l11
+	{mso-list-id:520776907;
+	mso-list-type:simple;
+	mso-list-template-ids:-491863364;}
+@list l11:level1
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:0in;
+	mso-level-legacy-space:5.65pt;
+	margin-left:42.55pt;
+	text-indent:0in;}
+@list l12
+	{mso-list-id:583804791;
+	mso-list-type:simple;
+	mso-list-template-ids:-1629064344;}
+@list l12:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:0in;
+	mso-level-legacy-space:8.5pt;
+	margin-left:42.55pt;
+	text-indent:0in;}
+@list l13
+	{mso-list-id:607781325;
+	mso-list-type:simple;
+	mso-list-template-ids:-1671011088;}
+@list l13:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F02D;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:5.65pt;
+	text-indent:-5.65pt;
+	font-family:Symbol;}
+@list l14
+	{mso-list-id:693002207;
+	mso-list-type:simple;
+	mso-list-template-ids:1039799580;}
+@list l14:level1
+	{mso-level-start-at:5;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l15
+	{mso-list-id:704334687;
+	mso-list-type:simple;
+	mso-list-template-ids:201916431;}
+@list l15:level1
+	{mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l16
+	{mso-list-id:715392310;
+	mso-list-type:simple;
+	mso-list-template-ids:330579592;}
+@list l16:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:0in;
+	mso-level-legacy-space:5.65pt;
+	margin-left:42.55pt;
+	text-indent:0in;}
+@list l17
+	{mso-list-id:751001131;
+	mso-list-type:simple;
+	mso-list-template-ids:739145140;}
+@list l17:level1
+	{mso-level-number-format:roman-upper;
+	mso-level-tab-stop:42.55pt;
+	mso-level-number-position:left;
+	margin-left:42.55pt;
+	text-indent:-42.55pt;}
+@list l18
+	{mso-list-id:758213909;
+	mso-list-type:simple;
+	mso-list-template-ids:391698800;}
+@list l18:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:19.85pt;
+	mso-level-number-position:left;
+	margin-left:19.85pt;
+	text-indent:-19.85pt;}
+@list l19
+	{mso-list-id:799499493;
+	mso-list-type:simple;
+	mso-list-template-ids:-1089985860;}
+@list l19:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l20
+	{mso-list-id:812600669;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1474192150 2043565640 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l20:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:57.25pt;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:42.55pt;}
+@list l21
+	{mso-list-id:919292170;
+	mso-list-type:simple;
+	mso-list-template-ids:-460162470;}
+@list l21:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F02D;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l22
+	{mso-list-id:950478517;
+	mso-list-type:simple;
+	mso-list-template-ids:330579592;}
+@list l22:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:0in;
+	mso-level-legacy-space:5.65pt;
+	margin-left:42.55pt;
+	text-indent:0in;}
+@list l23
+	{mso-list-id:996573127;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1880462770 2043565640 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l23:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:14.7pt;
+	mso-level-number-position:left;
+	margin-left:-42.55pt;
+	text-indent:42.55pt;}
+@list l24
+	{mso-list-id:1047872210;
+	mso-list-type:simple;
+	mso-list-template-ids:-220186586;}
+@list l24:level1
+	{mso-level-tab-stop:60.55pt;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:42.55pt;}
+@list l25
+	{mso-list-id:1085495345;
+	mso-list-type:simple;
+	mso-list-template-ids:1775536104;}
+@list l25:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l26
+	{mso-list-id:1112093052;
+	mso-list-type:simple;
+	mso-list-template-ids:1546037168;}
+@list l26:level1
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l27
+	{mso-list-id:1118989066;
+	mso-list-type:simple;
+	mso-list-template-ids:102012400;}
+@list l27:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:60.55pt;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:42.55pt;}
+@list l28
+	{mso-list-id:1205212563;
+	mso-list-type:simple;
+	mso-list-template-ids:1132988878;}
+@list l28:level1
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:88.9pt;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:52.9pt;}
+@list l29
+	{mso-list-id:1228684258;
+	mso-list-type:simple;
+	mso-list-template-ids:-460162470;}
+@list l29:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F02D;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l30
+	{mso-list-id:1321426306;
+	mso-list-type:simple;
+	mso-list-template-ids:-1671011088;}
+@list l30:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F02D;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:5.65pt;
+	text-indent:-5.65pt;
+	font-family:Symbol;}
+@list l31
+	{mso-list-id:1355301812;
+	mso-list-type:simple;
+	mso-list-template-ids:-1839583678;}
+@list l31:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F02D;
+	mso-level-tab-stop:60.55pt;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:42.55pt;
+	font-family:Symbol;}
+@list l32
+	{mso-list-id:1383676553;
+	mso-list-type:simple;
+	mso-list-template-ids:-1109784466;}
+@list l32:level1
+	{mso-level-start-at:11;
+	mso-level-tab-stop:60.55pt;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:42.55pt;}
+@list l33
+	{mso-list-id:1399088735;
+	mso-list-type:simple;
+	mso-list-template-ids:205919802;}
+@list l33:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;
+	mso-ansi-font-weight:normal;
+	mso-ansi-font-style:normal;}
+@list l34
+	{mso-list-id:1433015301;
+	mso-list-type:simple;
+	mso-list-template-ids:-460162470;}
+@list l34:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F02D;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l35
+	{mso-list-id:1489709540;
+	mso-list-type:simple;
+	mso-list-template-ids:-1645949538;}
+@list l35:level1
+	{mso-level-start-at:2;
+	mso-level-tab-stop:60.55pt;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:42.55pt;}
+@list l36
+	{mso-list-id:1572815955;
+	mso-list-type:simple;
+	mso-list-template-ids:1167617392;}
+@list l36:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:60.55pt;
+	mso-level-number-position:left;
+	margin-left:42.55pt;
+	text-indent:0in;}
+@list l37
+	{mso-list-id:1588808570;
+	mso-list-type:simple;
+	mso-list-template-ids:-1839583678;}
+@list l37:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F02D;
+	mso-level-tab-stop:60.55pt;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:42.55pt;
+	font-family:Symbol;}
+@list l38
+	{mso-list-id:1702631087;
+	mso-list-type:simple;
+	mso-list-template-ids:201916431;}
+@list l38:level1
+	{mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l39
+	{mso-list-id:1845392319;
+	mso-list-type:simple;
+	mso-list-template-ids:-1671011088;}
+@list l39:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F02D;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:5.65pt;
+	text-indent:-5.65pt;
+	font-family:Symbol;}
+@list l40
+	{mso-list-id:1850365654;
+	mso-list-type:simple;
+	mso-list-template-ids:-1671011088;}
+@list l40:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F02D;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:5.65pt;
+	text-indent:-5.65pt;
+	font-family:Symbol;}
+@list l41
+	{mso-list-id:1860970391;
+	mso-list-type:simple;
+	mso-list-template-ids:715702280;}
+@list l41:level1
+	{mso-level-number-format:alpha-lower;
+	mso-level-text:"%1\)";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:0in;
+	mso-level-legacy-space:5.65pt;
+	margin-left:56.7pt;
+	text-indent:0in;}
+@list l42
+	{mso-list-id:1865943151;
+	mso-list-type:simple;
+	mso-list-template-ids:-1022459618;}
+@list l42:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:60.55pt;
+	mso-level-number-position:left;
+	margin-left:21.25pt;
+	text-indent:21.3pt;}
+@list l43
+	{mso-list-id:1934624662;
+	mso-list-type:simple;
+	mso-list-template-ids:-615983876;}
+@list l43:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l44
+	{mso-list-id:1973827148;
+	mso-list-type:simple;
+	mso-list-template-ids:-2082335616;}
+@list l44:level1
+	{mso-level-text:"%1\)";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l45
+	{mso-list-id:1998536837;
+	mso-list-type:simple;
+	mso-list-template-ids:-1839583678;}
+@list l45:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F02D;
+	mso-level-tab-stop:60.55pt;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:42.55pt;
+	font-family:Symbol;}
+@list l0:level1 lfo18
+	{mso-level-start-at:1;
+	mso-level-number-format:bullet;
+	mso-level-numbering:continue;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:0in;
+	mso-level-legacy-space:5.65pt;
+	margin-left:0in;
+	text-indent:0in;
+	font-family:Symbol;}
+@list l0:level1 lfo42
+	{mso-level-start-at:1;
+	mso-level-number-format:bullet;
+	mso-level-numbering:continue;
+	mso-level-text:\F02D;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	mso-level-legacy:yes;
+	mso-level-legacy-indent:0in;
+	mso-level-legacy-space:5.65pt;
+	margin-left:42.55pt;
+	text-indent:0in;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35887416-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+<hr >
+<div align="center">
+          <table width="80%">
+          <tbody>
+                  <tr>
+                    <td>
+                        <a href="http://filosofia.obiectuala.ro"><img border="0" src="../../img/fo3.jpg" height="110" width="890" alt="filozofia obiectuala" ></a>
+                    </td>
+                  </tr>
+           </tbody>
+       </table>
+       </div>
+       <hr >
+<div class=Section1>
+
+<h2><a name="_Toc194477542"></a><a name="_Toc524538248"></a><a
+name="_Toc524537707"></a><a name="_Toc524537581"></a><a name="_Toc524535336"><span
+style='mso-bookmark:_Toc524537581'><span style='mso-bookmark:_Toc524537707'><span
+style='mso-bookmark:_Toc524538248'><span style='mso-bookmark:_Toc194477542'><span
+lang=RO>8.6 Modelul general de SPI</span></span></span></span></span></a></h2>
+
+<p class=MsoNormal style='text-indent:21.3pt'>Dup&#259; aceast&#259; extrem de
+succint&#259; prezentare a structurii generale a dou&#259; tipuri de SPI, cele
+naturale neuronale<a style='mso-footnote-id:ftn1' href="#_ftn1" name="_ftnref1"
+title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+style='font-size:12.0pt;mso-fareast-font-family:"Times New Roman";mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'>[1]</span></span><![endif]></span></span></a>
+&#351;i cele artificiale, nu putem s&#259; nu observ&#259;m, oricât ar
+p&#259;rea de bizar la prima vedere, c&#259; între aceste clase de SPI
+realizabile exist&#259; elemente comune care pot forma un model general al
+acestor tipuri de SM. Pentru început îns&#259;, este nevoie s&#259; facem o
+precizare foarte important&#259;: SPI, atât cele naturale cât &#351;i cele
+artificiale, sunt o subclas&#259; a sistemelor materiale, a&#351;adar sunt
+sisteme cu materialitatea dobândit&#259; de la sistemele abiotice suport, cu
+toate atributele specifice ale SM abiotice, dar la care se adaug&#259;
+atributele specifice SPI. Din p.d.v. al complexit&#259;&#355;ii (al nivelului
+de organizare), SPI sunt îns&#259; sisteme extrem de complexe fa&#355;&#259; de
+sistemele ce formeaz&#259; mul&#355;imea lor generatoare - sistemele abiotice.</p>
+
+<p class=MsoNormal style='text-indent:21.3pt'>Pe baza descrierilor structurale
+ale celor dou&#259; tipuri de SPI prezentate mai sus, putem acum s&#259;
+extragem componentele comune ale celor dou&#259; tipuri de sisteme:</p>
+
+<p class=MsoNormal style='margin-left:0in;text-indent:42.55pt;mso-list:l43 level1 lfo45;
+tab-stops:list 56.7pt'><![if !supportLists]><span style='mso-list:Ignore'>1)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><![endif]>Existen&#355;a
+unei SRS (ca pentru orice SM) ce define&#351;te (separ&#259;) un <i
+style='mso-bidi-font-style:normal'>interior</i> &#351;i un <i style='mso-bidi-font-style:
+normal'>exterior</i> al sistemului.</p>
+
+<p class=MsoNormal style='margin-left:0in;text-indent:42.55pt;mso-list:l43 level1 lfo45;
+tab-stops:list 56.7pt'><![if !supportLists]><span style='mso-list:Ignore'>2)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><![endif]>Pe
+aceast&#259; SRS exist&#259; <i style='mso-bidi-font-style:normal'>zone
+specializate de transfer</i>, cu arie definit&#259; &#351;i cu localizare
+invariant&#259; fa&#355;&#259; de referin&#355;a spa&#355;ial&#259;
+intern&#259;, prin care se pot face transferuri controlate de fluxuri. Prin <i
+style='mso-bidi-font-style:normal'>zon&#259; specializat&#259;</i> se
+în&#355;elege o por&#355;iune de SRS a c&#259;rei permeabilitate
+(transmitan&#355;&#259;) este <u>selectiv&#259; la un anumit tip de flux</u>,
+permeabilitate ce poate fi controlat&#259; <u>din interiorul SPI</u>. Aceste
+zone fac parte din <i style='mso-bidi-font-style:normal'>unit&#259;&#355;ile de
+intrare/ie&#351;ire</i> ale SPI.</p>
+
+<p class=MsoNormal style='margin-left:0in;text-indent:42.55pt;mso-list:l43 level1 lfo45;
+tab-stops:list 56.7pt'><![if !supportLists]><span style='mso-list:Ignore'>3)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><![endif]>În
+interiorul SPI exist&#259; o clas&#259; special&#259; de SM &#351;i anume <i
+style='mso-bidi-font-style:normal'>sistemele suport de informa&#355;ie </i>(SSI)
+<i style='mso-bidi-font-style:normal'>interne</i>, sisteme ale c&#259;ror
+propriet&#259;&#355;i sunt sesizabile de c&#259;tre SPI, &#351;i care
+propriet&#259;&#355;i sunt strict dependente de propriet&#259;&#355;ile
+fluxurilor receptate de unit&#259;&#355;ile de intrare.</p>
+
+<p class=MsoNormal style='margin-left:0in;text-indent:42.55pt;mso-list:l43 level1 lfo45;
+tab-stops:list 56.7pt'><![if !supportLists]><span style='mso-list:Ignore'>4)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><![endif]>Tot
+în interiorul SPI exist&#259; un subsistem numit <i style='mso-bidi-font-style:
+normal'>unitate de prelucrare a informa&#355;iei</i>, cu urm&#259;toarele
+caracteristici specifice:</p>
+
+<p class=MsoNormal style='margin-left:0in;text-indent:70.9pt;mso-list:l26 level1 lfo46;
+tab-stops:list 85.05pt'><![if !supportLists]><span style='mso-list:Ignore'>a)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><![endif]>Capacitatea
+de a sesiza (percepe, determina) proprietatea specific&#259; a SSI interne
+(proprietate ce constituie <u>reprezentarea</u> unei propriet&#259;&#355;i
+percepute de la un obiect extern SPI) &#351;i de a discerne între dou&#259;
+valori diferite ale acestei propriet&#259;&#355;i.</p>
+
+<p class=MsoNormal style='margin-left:0in;text-indent:70.9pt;mso-list:l26 level1 lfo46;
+tab-stops:list 85.05pt'><![if !supportLists]><span style='mso-list:Ignore'>b)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><![endif]>Capacitatea
+de a modifica dup&#259; anumite reguli aceast&#259; proprietate &#351;i deci
+&#351;i informa&#355;ia con&#355;inut&#259; în SSI.</p>
+
+<p class=MsoNormal style='margin-left:0in;text-indent:70.9pt;mso-list:l26 level1 lfo46;
+tab-stops:list 85.05pt'><![if !supportLists]><span style='mso-list:Ignore'>c)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><![endif]>Capacitatea
+de a percepe o succesiune (distribu&#355;ie) temporal&#259; a valorilor
+asociate la dou&#259; SSI de intrare, cu alte cuvinte de a distinge între o
+valoare <i style='mso-bidi-font-style:normal'>anterioar&#259;</i> &#351;i una <i
+style='mso-bidi-font-style:normal'>prezent&#259;</i>.</p>
+
+<p class=MsoNormal style='margin-left:0in;text-indent:42.55pt;mso-list:l14 level1 lfo47;
+tab-stops:list 56.7pt'><![if !supportLists]><span style='mso-list:Ignore'>5)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><![endif]>Un
+alt subsistem esen&#355;ial al SPI este <i style='mso-bidi-font-style:normal'>unitatea
+de stocare </i>a SSI (memoria SPI), la care are acces unitatea de prelucrare.
+În aceast&#259; unitate este p&#259;strat&#259; întreaga informa&#355;ie
+dobândit&#259; pe parcursul existen&#355;ei func&#355;ionale a SPI.</p>
+
+<p class=MsoNormal style='margin-left:0in;text-indent:42.55pt;mso-list:l14 level1 lfo47;
+tab-stops:list 56.7pt'><![if !supportLists]><span style='mso-list:Ignore'>6)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><![endif]>Între
+toate subsistemele interne ale SPI este nevoie s&#259; existe o circula&#355;ie
+(ni&#351;te fluxuri) de SSI, a&#351;adar trebuie s&#259; existe ni&#351;te <i
+style='mso-bidi-font-style:normal'>c&#259;i de comunica&#355;ie</i> pentru
+ghidarea acestor fluxuri interne. Aceste fluxuri, pentru a nu avea pierderi pe
+traseu, trebuie s&#259; fie cu sec&#355;iune efectiv&#259; constant&#259;
+(fluxuri izotome).</p>
+
+<p class=MsoNormal style='margin-left:0in;text-indent:42.55pt;mso-list:l14 level1 lfo47;
+tab-stops:list 56.7pt'><![if !supportLists]><span style='mso-list:Ignore'>7)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><![endif]>Men&#355;inerea
+fluxurilor de SSI interne &#351;i a fluxurilor func&#355;ionale ale
+componentelor SPI, condi&#355;ie <i style='mso-bidi-font-style:normal'>sine qua
+non</i> a func&#355;ion&#259;rii acestuia, determin&#259; necesitatea unei
+aliment&#259;ri suplimentare cu energie fa&#355;&#259; de consumul energetic
+normal al suportului abiotic din care sunt formate subsistemele SPI.
+Aceast&#259; energie suplimentar&#259; se ob&#355;ine de la fluxurile de
+alimentare de nivel II (primul nivel fiind cel de alimentare al SM abiotice),
+fluxuri asigurate de sistemul material gazd&#259; (în cazul biosistemelor) sau
+de sisteme speciale de alimentare (în cazul SAPI).</p>
+
+<p class=MsoNormal style='text-indent:21.3pt'>Conform celor ar&#259;tate mai
+sus, modelul general de SPI propus de filosofia obiectual&#259;, valabil atât
+pentru SPI naturale cât &#351;i pentru cele artificiale este format din
+urm&#259;toarele subsisteme materiale esen&#355;iale:</p>
+
+<p class=MsoNormal style='margin-left:0in;text-indent:42.55pt;mso-list:l12 level1 lfo44;
+tab-stops:56.7pt'><![if !supportLists]><span style='mso-list:Ignore'>1)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>Unit&#259;&#355;ile
+de intrare</i></b>, ce convertesc fluxurile externe incidente pe zonele
+specializate ale SRS în fluxuri de SSI interne corespondente;</p>
+
+<p class=MsoNormal style='margin-left:0in;text-indent:42.55pt;mso-list:l12 level1 lfo44;
+tab-stops:56.7pt'><![if !supportLists]><span style='mso-list:Ignore'>2)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>Unit&#259;&#355;ile
+de ie&#351;ire</i></b>, ce fac conversia invers&#259;, de la fluxurile interne
+de SSI la fluxuri emergente &#351;i transmisibile în exteriorul SPI;</p>
+
+<p class=MsoNormal style='margin-left:0in;text-indent:42.55pt;mso-list:l12 level1 lfo44;
+tab-stops:56.7pt'><![if !supportLists]><span style='mso-list:Ignore'>3)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>Sistemul
+de comunica&#355;ie intern</i></b>, ce asigur&#259; canalizarea fluxurilor
+interne de SSI;</p>
+
+<p class=MsoNormal style='margin-left:0in;text-indent:42.55pt;mso-list:l12 level1 lfo44;
+tab-stops:56.7pt'><![if !supportLists]><span style='mso-list:Ignore'>4)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>Unit&#259;&#355;ile
+de prelucrare a informa&#355;iei</i></b>, capabile s&#259; perceap&#259;
+structura SSI interne &#351;i s&#259; opereze cu aceast&#259; structur&#259;
+conform regulilor de prelucrare a informa&#355;iei specifice unui SPI dat;</p>
+
+<p class=MsoNormal style='margin-left:0in;text-indent:42.55pt;mso-list:l12 level1 lfo44;
+tab-stops:56.7pt'><![if !supportLists]><span style='mso-list:Ignore'>5)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>Mul&#355;imea
+organizat&#259; a SSI interne</i></b>, mul&#355;imea generatoare a SSI purt&#259;toare
+de informa&#355;ie<a style='mso-footnote-id:ftn2' href="#_ftn2" name="_ftnref2"
+title=""><span class=MsoFootnoteReference><span style='mso-special-character:
+footnote'><![if !supportFootnotes]><span class=MsoFootnoteReference><span
+style='font-size:12.0pt;mso-fareast-font-family:"Times New Roman";mso-ansi-language:
+EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA'>[2]</span></span><![endif]></span></span></a>organizat&#259;
+ca un obiect invariant numit <b style='mso-bidi-font-weight:normal'><i
+style='mso-bidi-font-style:normal'>memorie</i></b> ;</p>
+
+<p class=MsoNormal style='margin-left:0in;text-indent:42.55pt;mso-list:l12 level1 lfo44;
+tab-stops:56.7pt'><![if !supportLists]><span style='mso-list:Ignore'>6)<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><![endif]><b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'>Unit&#259;&#355;ile
+de alimentare</i></b> energetic&#259; de nivel II.</p>
+
+<p class=MsoNormal style='text-indent:21.3pt'>În&#355;elegerea acestui model
+general de SPI nu se poate face suficient de clar pân&#259; nu l&#259;murim ce
+sunt sistemele suport de informa&#355;ie, aceast&#259; clas&#259; de SM
+f&#259;r&#259; de care nu este posibil&#259; existen&#355;a niciunui proces de
+prelucrare a informa&#355;iei. </p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+<div style='mso-element:footnote-list'><![if !supportFootnotes]><br clear=all>
+
+<hr align=left size=1 width="33%">
+
+<![endif]>
+
+<div style='mso-element:footnote' id=ftn1>
+
+<p class=MsoFootnoteText><a style='mso-footnote-id:ftn1' href="#_ftnref1"
+name="_ftn1" title=""><span class=MsoFootnoteReference><span lang=RO><span
+style='mso-special-character:footnote'><![if !supportFootnotes]><span
+class=MsoFootnoteReference><span lang=RO style='font-size:10.0pt;mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:RO;mso-fareast-language:EN-US;mso-bidi-language:
+AR-SA'>[1]</span></span><![endif]></span></span></span></a><span lang=RO> SPI
+neuronale sunt cele mai bine cunoscute sisteme naturale de prelucrare a
+informa&#355;iei dar trebuie s&#259; &#355;inem cont c&#259; aceste sisteme
+func&#355;ioneaz&#259; pe baza mecanismelor fundamentale de prelucrare a
+informa&#355;iei din interiorul celulei, mecanisme înc&#259; insuficient
+cunoscute ast&#259;zi. Din acest motiv nici nu am inclus descrierea SPI
+intracelular în prezentarea de mai sus, dar pornim de la premiza c&#259;
+elementele fundamentale ale structurii generale a unui SPI sunt prezente
+&#351;i la acest nivel de organizare.</span></p>
+
+</div>
+
+<div style='mso-element:footnote' id=ftn2>
+
+<p class=MsoFootnoteText><a style='mso-footnote-id:ftn2' href="#_ftnref2"
+name="_ftn2" title=""><span class=MsoFootnoteReference><span lang=RO><span
+style='mso-special-character:footnote'><![if !supportFootnotes]><span
+class=MsoFootnoteReference><span lang=RO style='font-size:10.0pt;mso-fareast-font-family:
+"Times New Roman";mso-ansi-language:RO;mso-fareast-language:EN-US;mso-bidi-language:
+AR-SA'>[2]</span></span><![endif]></span></span></span></a><span lang=RO>
+Existând în interiorul SPI (mai ales la SAPI) &#351;i o frac&#355;iune din
+mul&#355;imea SSI ce nu con&#355;ine informa&#355;ie (SSI vide de
+informa&#355;ie, rezerva de memorie).</span></p>
+
+</div>
+
+</div>
+<div class="NAVFOOTER">
+            <hr align="left" width="100%" >
+            <table summary="Footer navigation table" border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tbody><tr>
+                        <td align="left" valign="top" width="33%"><a href="85.htm" accesskey="P"><img src="../../img/st.gif" alt="inapoi" height="35" width="50" ></a></td>
+                        <td align="center" valign="top" width="33%"><a href="../index.html" accesskey="I"><b>CUPRINS</b></a></td>
+                            <td align="right" valign="top" width="33%"><a href="87.htm" accesskey="N"><img src="../../img/dr.gif" alt="inainte" height="35" width="50"></a></td>
+                    </tr>
+            </tbody></table>
+            <hr >
+        </div>
+        <div align="center" class="color">
+            <p>Copyright &copy; 2006-2008 Aurel Rusu. All rights reserved.</p>
+        </div>
+</body>
+
+</html>
